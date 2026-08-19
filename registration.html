@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration — Jonas Choi</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="row">
+        <div>
+          <a class="title" href="index.html">Chemical Physics Roadmap</a>
+          <span class="subtitle">Columbia College · Chemical Physics</span>
+        </div>
+        <nav>
+          <a href="index.html" >About</a>
+          <a href="dashboard.html" >Dashboard</a>
+          <a href="courses.html" >Courses</a>
+          <a href="registration.html" class="active">Registration</a>
+          <a href="projects.html" >Projects</a>
+          <a href="professors.html" >Professors</a>
+          <a href="research.html" >Research</a>
+          <a href="internships.html" >Opportunities</a>
+          <a href="notes.html" >Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+<div class="section">
+  <h1 class="page-title">Course Registration</h1>
+  <p class="page-subtitle">Chemical Physics &middot; Columbia College &middot; 2026–2030</p>
+  <p class="reg-edit-hint" id="reg-edit-hint" hidden>
+    <span class="reg-edit-dot"></span>Editing locally — drag any course to rearrange it.
+    <span class="reg-edit-status" id="reg-edit-status"></span>
+  </p>
+</div>
+
+<!-- Semester I -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester I</span>
+    <span class="reg-sem-season">Fall 2026</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester I">
+      <tr data-file="chem-un1507-intensive-gen-chem-lab.md" data-credits="3.00">
+        <td class="reg-code">CHEM UN1507</td>
+        <td>Intensive General Chemistry Lab</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="coms-w1004-programming-in-java.md" data-credits="3.00">
+        <td class="reg-code">COMS W1004</td>
+        <td>Programming in Java</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="engl-cc1010-university-writing.md" data-credits="3.00">
+        <td class="reg-code">ENGL CC1010</td>
+        <td>University Writing</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="huma-cc1001-literature-humanities-1.md" data-credits="4.00">
+        <td class="reg-code">HUMA CC1001</td>
+        <td>Literature Humanities I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="math-un1201-calculus-3.md" data-credits="3.00">
+        <td class="reg-code">MATH UN1201</td>
+        <td>Calculus III</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">16.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester II -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester II</span>
+    <span class="reg-sem-season">Spring 2027</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester II">
+      <tr data-file="chem-un2045-intensive-organic-chemistry.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN2045</td>
+        <td>Intensive Organic Chemistry</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="huma-cc1002-literature-humanities-2.md" data-credits="4.00">
+        <td class="reg-code">HUMA CC1002</td>
+        <td>Literature Humanities II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="math-un1202-calculus-4.md" data-credits="3.00">
+        <td class="reg-code">MATH UN1202</td>
+        <td>Calculus IV</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="math-un2015-linear-algebra-and-probability.md" data-credits="3.00">
+        <td class="reg-code">MATH UN2015</td>
+        <td>Linear Algebra and Probability</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="scnc-cc1000-frontiers-of-science.md" data-credits="4.00">
+        <td class="reg-code">SCNC CC1000</td>
+        <td>Frontiers of Science</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">18.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester III -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester III</span>
+    <span class="reg-sem-season">Fall 2027</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester III">
+      <tr data-file="chem-un2046-intensive-orgo-for-1st-year.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN2046</td>
+        <td>Intensive Organic Chemistry for 1st Year</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="chem-un2545-intensive-orgo-lab.md" data-credits="3.00">
+        <td class="reg-code">CHEM UN2545</td>
+        <td>Intensive Organic Chemistry Lab</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="coci-cc1101-contemporary-civilization-1.md" data-credits="4.00">
+        <td class="reg-code">COCI CC1101</td>
+        <td>Contemporary Civilization I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="math-un2030-ordinary-differential-equations.md" data-credits="3.00">
+        <td class="reg-code">MATH UN2030</td>
+        <td>Ordinary Differential Equations</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phys-un1401-intro-mechanics-thermo.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN1401</td>
+        <td>Intro to Mechanics &amp; Thermo</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester IV -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester IV</span>
+    <span class="reg-sem-season">Spring 2028</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester IV">
+      <tr data-file="coci-cc1102-contemporary-civilization-2.md" data-credits="4.00">
+        <td class="reg-code">COCI CC1102</td>
+        <td>Contemporary Civilization II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="coms-w3134-data-structures.md" data-credits="3.00">
+        <td class="reg-code">COMS W3134</td>
+        <td>Data Structures in Java</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="coms-w3203-discrete-mathematics.md" data-credits="4.00">
+        <td class="reg-code">COMS W3203</td>
+        <td>Discrete Mathematics</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="math-un3028-partial-differential-equations.md" data-credits="3.00">
+        <td class="reg-code">MATH UN3028</td>
+        <td>Partial Differential Equations</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phys-un1402-intro-elec-magnetism-optics.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN1402</td>
+        <td>Intro Elec/Magnetism &amp; Optics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester V -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester V</span>
+    <span class="reg-sem-season">Fall 2028</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester V">
+      <tr data-file="chem-un3079-physical-chemistry-1.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN3079</td>
+        <td>Physical Chemistry I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="chem-un3085-physical-analytical-lab-1.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN3085</td>
+        <td>Physical-Analytical Laboratory I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="coms-w4771-machine-learning.md" data-credits="3.00">
+        <td class="reg-code">COMS W4771</td>
+        <td>Machine Learning</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phys-un1403-intro-classical-quantum-waves.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN1403</td>
+        <td>Intro to Classical &amp; Quantum Waves</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phys-un3003-mechanics.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN3003</td>
+        <td>Mechanics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VI -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VI</span>
+    <span class="reg-sem-season">Spring 2029</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VI">
+      <tr data-file="chap-e4120-statistical-mechanics-comp-methods.md" data-credits="3.00">
+        <td class="reg-code">CHAP E4120</td>
+        <td>Statistical Mechanics &amp; Computational Methods</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="chem-un3080-physical-chemistry-2.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN3080</td>
+        <td>Physical Chemistry II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="chem-un3086-physical-analytical-lab-2.md" data-credits="4.00">
+        <td class="reg-code">CHEM UN3086</td>
+        <td>Physical-Analytical Laboratory II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-file="phys-un1494-intro-experimental-physics-lab.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN1494</td>
+        <td>Intro to Experimental Physics-Lab</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phys-un3007-electricity-magnetism.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN3007</td>
+        <td>Electricity &amp; Magnetism</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VII -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VII</span>
+    <span class="reg-sem-season">Fall 2029</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VII">
+      <tr data-file="chem-gu4221-quantum-chemistry-1.md" data-credits="3.00">
+        <td class="reg-code">CHEM GU4221</td>
+        <td>Quantum Chemistry I</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="coms-e4776-neural-networks-deep-learning.md" data-credits="3.00">
+        <td class="reg-code">COMS E4776</td>
+        <td>Neural Networks &amp; Deep Learning</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="huma-un1121-art-humanities.md" data-credits="3.00">
+        <td class="reg-code">HUMA UN1121</td>
+        <td>Art Humanities</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phed-un1001-pe-1.md" data-credits="1.00">
+        <td class="reg-code">PHED UN1001</td>
+        <td>Physical Education I</td>
+        <td class="reg-credits">1.00</td>
+      </tr>
+      <tr data-file="phys-un3008-electromagnetic-waves-optics.md" data-credits="3.00">
+        <td class="reg-code">PHYS UN3008</td>
+        <td>Electromagnetic Waves &amp; Optics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">13.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VIII -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VIII</span>
+    <span class="reg-sem-season">Spring 2030</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VIII">
+      <tr data-file="chem-gr6222-quantum-chemistry-2.md" data-credits="2.50">
+        <td class="reg-code">CHEM GR6222</td>
+        <td>Quantum Chemistry II</td>
+        <td class="reg-credits">2.50</td>
+      </tr>
+      <tr data-file="chem-un3920-senior-seminar.md" data-credits="2.00">
+        <td class="reg-code">CHEM UN3920</td>
+        <td>Senior Seminar</td>
+        <td class="reg-credits">2.00</td>
+      </tr>
+      <tr data-file="huma-un1123-music-humanities.md" data-credits="3.00">
+        <td class="reg-code">HUMA UN1123</td>
+        <td>Music Humanities</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="phed-un1002-pe-2.md" data-credits="1.00">
+        <td class="reg-code">PHED UN1002</td>
+        <td>Physical Education II</td>
+        <td class="reg-credits">1.00</td>
+      </tr>
+      <tr data-file="global-core-1.md" data-credits="3.00">
+        <td class="reg-code">—</td>
+        <td>Global Core I</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-file="global-core-2.md" data-credits="3.00">
+        <td class="reg-code">—</td>
+        <td>Global Core II</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">14.50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+// Drag-to-rearrange, active only when served by tools/serve.py. On GitHub Pages
+// /api/ping 404s, so the published page stays a plain static table.
+(function () {
+  "use strict";
+
+  var hint = document.getElementById("reg-edit-hint");
+  var status = document.getElementById("reg-edit-status");
+  var dragged = null;
+  var originSemester = null;
+
+  function bodies() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll("tbody[data-semester]"));
+  }
+
+  function coursesIn(tbody) {
+    return Array.prototype.slice.call(
+      tbody.querySelectorAll("tr[data-file]"));
+  }
+
+  function say(message, isError) {
+    status.textContent = message;
+    status.className = "reg-edit-status" + (isError ? " is-error" : "");
+  }
+
+  // Which row should the dragged one land before, given the pointer position?
+  function rowAfter(tbody, y) {
+    var candidates = coursesIn(tbody).filter(function (row) {
+      return row !== dragged;
+    });
+    var closest = null;
+    var closestOffset = Number.NEGATIVE_INFINITY;
+    candidates.forEach(function (row) {
+      var box = row.getBoundingClientRect();
+      var offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closestOffset) {
+        closestOffset = offset;
+        closest = row;
+      }
+    });
+    return closest;
+  }
+
+  function retotal(tbody) {
+    var sum = 0;
+    coursesIn(tbody).forEach(function (row) {
+      sum += parseFloat(row.dataset.credits) || 0;
+    });
+    var cell = tbody.querySelector(".reg-total .reg-credits");
+    if (cell) cell.textContent = sum.toFixed(2);
+  }
+
+  function save(semesters) {
+    say("Saving…", false);
+    fetch("/api/reorder", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        semesters: semesters.map(function (tbody) {
+          return {
+            semester: tbody.dataset.semester,
+            files: coursesIn(tbody).map(function (row) {
+              return row.dataset.file;
+            })
+          };
+        })
+      })
+    }).then(function (response) {
+      return response.json().then(function (data) {
+        if (!response.ok || !data.ok) throw new Error(data.error || "save failed");
+        // Reload so what's on screen comes from the rebuilt files, not from JS.
+        window.location.reload();
+      });
+    }).catch(function (err) {
+      say("Could not save: " + err.message + " — reload to undo.", true);
+    });
+  }
+
+  function enable() {
+    hint.hidden = false;
+    bodies().forEach(function (tbody) {
+      coursesIn(tbody).forEach(function (row) {
+        row.draggable = true;
+        row.classList.add("reg-draggable");
+      });
+
+      tbody.addEventListener("dragover", function (event) {
+        if (!dragged) return;
+        event.preventDefault();
+        var before = rowAfter(tbody, event.clientY);
+        if (before) {
+          tbody.insertBefore(dragged, before);
+        } else {
+          // Past the last course — but always above the Total row.
+          tbody.insertBefore(dragged, tbody.querySelector(".reg-total"));
+        }
+      });
+    });
+
+    document.addEventListener("dragstart", function (event) {
+      var row = event.target.closest && event.target.closest("tr[data-file]");
+      if (!row) return;
+      dragged = row;
+      originSemester = row.parentNode;
+      row.classList.add("is-dragging");
+      event.dataTransfer.effectAllowed = "move";
+      // Firefox needs data set for a drag to start at all.
+      event.dataTransfer.setData("text/plain", row.dataset.file);
+    });
+
+    document.addEventListener("dragend", function () {
+      if (!dragged) return;
+      dragged.classList.remove("is-dragging");
+      var destination = dragged.parentNode;
+      var affected = [destination];
+      if (originSemester && originSemester !== destination) {
+        affected.push(originSemester);
+      }
+      affected.forEach(retotal);
+      dragged = null;
+      originSemester = null;
+      save(affected);
+    });
+  }
+
+  fetch("/api/ping").then(function (response) {
+    if (response.ok) enable();
+  }).catch(function () {
+    /* Published or opened from disk: stays read-only. */
+  });
+})();
+</script>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      Jonas Choi &middot; Columbia University &middot; Built August 19, 2026
+    </div>
+  </footer>
+</body>
+</html>
