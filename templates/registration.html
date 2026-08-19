@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% set active_page = "registration" %}
+{% set static_prefix = "" %}
+
+{% block title %}Registration{% endblock %}
+
+{% block content %}
+<div class="section">
+  <h1 class="page-title">Course Registration</h1>
+  <p class="page-subtitle">Chemical Physics &middot; Columbia College &middot; 2026–2030</p>
+  <p class="reg-edit-hint" id="reg-edit-hint" hidden>
+    <span class="reg-edit-dot"></span>Editing locally — drag any course to rearrange it.
+    <span class="reg-edit-status" id="reg-edit-status"></span>
+  </p>
+</div>
+{% for sem in registration %}
+
+<!-- {{ sem.label }} -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">{{ sem.label }}</span>
+    <span class="reg-sem-season">{{ sem.season }}</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="{{ sem.label }}">
+{% for row in sem.rows %}
+      <tr data-file="{{ row.file }}" data-credits="{{ row.credits }}">
+        <td class="reg-code">{{ row.code }}</td>
+        <td>{{ row.name }}</td>
+        <td class="reg-credits">{{ row.credits }}</td>
+      </tr>
+{% endfor %}
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">{{ sem.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endfor %}
+
+<script>
+// Drag-to-rearrange, active only when served by tools/serve.py. On GitHub Pages
+// /api/ping 404s, so the published page stays a plain static table.
+(function () {
+  "use strict";
+
+  var hint = document.getElementById("reg-edit-hint");
+  var status = document.getElementById("reg-edit-status");
+  var dragged = null;
+  var originSemester = null;
+
+  function bodies() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll("tbody[data-semester]"));
+  }
+
+  function coursesIn(tbody) {
+    return Array.prototype.slice.call(
+      tbody.querySelectorAll("tr[data-file]"));
+  }
+
+  function say(message, isError) {
+    status.textContent = message;
+    status.className = "reg-edit-status" + (isError ? " is-error" : "");
+  }
+
+  // Which row should the dragged one land before, given the pointer position?
+  function rowAfter(tbody, y) {
+    var candidates = coursesIn(tbody).filter(function (row) {
+      return row !== dragged;
+    });
+    var closest = null;
+    var closestOffset = Number.NEGATIVE_INFINITY;
+    candidates.forEach(function (row) {
+      var box = row.getBoundingClientRect();
+      var offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closestOffset) {
+        closestOffset = offset;
+        closest = row;
+      }
+    });
+    return closest;
+  }
+
+  function retotal(tbody) {
+    var sum = 0;
+    coursesIn(tbody).forEach(function (row) {
+      sum += parseFloat(row.dataset.credits) || 0;
+    });
+    var cell = tbody.querySelector(".reg-total .reg-credits");
+    if (cell) cell.textContent = sum.toFixed(2);
+  }
+
+  function save(semesters) {
+    say("Saving…", false);
+    fetch("/api/reorder", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        semesters: semesters.map(function (tbody) {
+          return {
+            semester: tbody.dataset.semester,
+            files: coursesIn(tbody).map(function (row) {
+              return row.dataset.file;
+            })
+          };
+        })
+      })
+    }).then(function (response) {
+      return response.json().then(function (data) {
+        if (!response.ok || !data.ok) throw new Error(data.error || "save failed");
+        // Reload so what's on screen comes from the rebuilt files, not from JS.
+        window.location.reload();
+      });
+    }).catch(function (err) {
+      say("Could not save: " + err.message + " — reload to undo.", true);
+    });
+  }
+
+  function enable() {
+    hint.hidden = false;
+    bodies().forEach(function (tbody) {
+      coursesIn(tbody).forEach(function (row) {
+        row.draggable = true;
+        row.classList.add("reg-draggable");
+      });
+
+      tbody.addEventListener("dragover", function (event) {
+        if (!dragged) return;
+        event.preventDefault();
+        var before = rowAfter(tbody, event.clientY);
+        if (before) {
+          tbody.insertBefore(dragged, before);
+        } else {
+          // Past the last course — but always above the Total row.
+          tbody.insertBefore(dragged, tbody.querySelector(".reg-total"));
+        }
+      });
+    });
+
+    document.addEventListener("dragstart", function (event) {
+      var row = event.target.closest && event.target.closest("tr[data-file]");
+      if (!row) return;
+      dragged = row;
+      originSemester = row.parentNode;
+      row.classList.add("is-dragging");
+      event.dataTransfer.effectAllowed = "move";
+      // Firefox needs data set for a drag to start at all.
+      event.dataTransfer.setData("text/plain", row.dataset.file);
+    });
+
+    document.addEventListener("dragend", function () {
+      if (!dragged) return;
+      dragged.classList.remove("is-dragging");
+      var destination = dragged.parentNode;
+      var affected = [destination];
+      if (originSemester && originSemester !== destination) {
+        affected.push(originSemester);
+      }
+      affected.forEach(retotal);
+      dragged = null;
+      originSemester = null;
+      save(affected);
+    });
+  }
+
+  fetch("/api/ping").then(function (response) {
+    if (response.ok) enable();
+  }).catch(function () {
+    /* Published or opened from disk: stays read-only. */
+  });
+})();
+</script>
+{% endblock %}

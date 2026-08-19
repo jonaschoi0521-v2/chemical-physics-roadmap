@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% set active_page = "professors" %}
+{% set static_prefix = "" %}
+
+{% block title %}Professors{% endblock %}
+
+{% block content %}
+<div class="section">
+  <h1 class="page-title">Columbia Professors</h1>
+  <p class="page-subtitle">Drug discovery &amp; delivery faculty of interest</p>
+</div>
+
+<div class="section">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th style="width: 7rem;">Division</th>
+        <th>Why</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for p in professors %}
+      <tr>
+        <td class="course-name">{{ p.name }}</td>
+        <td style="color: var(--muted); font-size: 0.8rem;">{{ p.division }}</td>
+        <td style="color: var(--muted); font-size: 0.85rem;">{{ p.why }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

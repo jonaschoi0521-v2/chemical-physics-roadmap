@@ -1,0 +1,28 @@
+# CHEM UN2045 — Intensive Organic Chemistry
+
+**Status:** planned
+**Semester:** Semester II
+**Credits:** 4
+**Fulfills:** Chemical Physics Major
+**Grade:**
+**Order:** 1
+
+---
+
+## Why This Course Matters
+
+---
+
+## Log
+
+---
+
+## Key Concepts
+
+---
+
+## Resources Used
+
+---
+
+## Connections
