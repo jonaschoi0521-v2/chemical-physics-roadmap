@@ -1,11 +1,11 @@
 # ENGL CC1010 — University Writing
 
 **Status:** planned
-**Semester:** Semester I
+**Semester:** Semester II
 **Credits:** 3
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 3
+**Order:** 2
 
 ---
 
