@@ -1,7 +1,7 @@
 # PHYS UN1494 — Intro to Experimental Physics-Lab
 
 **Status:** planned
-**Semester:** Semester VI
+**Semester:** Semester VIII
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

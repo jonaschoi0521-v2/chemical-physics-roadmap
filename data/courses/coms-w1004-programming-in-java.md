@@ -1,7 +1,7 @@
 # COMS W1004 — Programming in Java
 
 **Status:** planned
-**Semester:** Semester I
+**Semester:** Semester IV
 **Credits:** 3
 **Fulfills:** Builder Stack
 **Grade:**

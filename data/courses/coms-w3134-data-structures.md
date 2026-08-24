@@ -1,11 +1,11 @@
 # COMS W3134 — Data Structures in Java
 
 **Status:** planned
-**Semester:** Semester IV
+**Semester:** Semester V
 **Credits:** 3
 **Fulfills:** Builder Stack
 **Grade:**
-**Order:** 2
+**Order:** 3
 
 ---
 

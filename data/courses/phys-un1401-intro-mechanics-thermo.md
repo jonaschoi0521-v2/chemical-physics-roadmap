@@ -1,11 +1,11 @@
 # PHYS UN1401 — Intro to Mechanics & Thermo
 
 **Status:** planned
-**Semester:** Semester III
+**Semester:** Semester I
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 5
+**Order:** 4
 
 ---
 

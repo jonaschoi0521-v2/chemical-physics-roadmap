@@ -1,7 +1,7 @@
 # PHYS UN3008 — Electromagnetic Waves & Optics
 
 **Status:** planned
-**Semester:** Semester VII
+**Semester:** Semester VI
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

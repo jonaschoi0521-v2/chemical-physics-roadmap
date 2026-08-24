@@ -1,7 +1,7 @@
 # PHYS UN3007 — Electricity & Magnetism
 
 **Status:** planned
-**Semester:** Semester VI
+**Semester:** Semester V
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

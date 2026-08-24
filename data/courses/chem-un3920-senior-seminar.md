@@ -1,11 +1,11 @@
 # CHEM UN3920 — Senior Seminar
 
 **Status:** planned
-**Semester:** Semester VIII
+**Semester:** Semester VII
 **Credits:** 2
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 2
+**Order:** 1
 
 ---
 
