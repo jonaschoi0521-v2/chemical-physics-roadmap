@@ -315,9 +315,9 @@ def compute_stats(courses, projects, researchers, internships, learning) -> dict
     all_courses_complete = sum(1 for c in courses if c["status"] == "completed")
     all_courses_total = max(len(courses), 1)
 
-    cheme_core = [c for c in courses if c.get("subject") == "Chemical Engineering"]
-    cheme_core_complete = sum(1 for c in cheme_core if c["status"] == "completed")
-    cheme_core_total = max(len(cheme_core), 1)
+    major_core = [c for c in courses if c.get("fulfills") == "Chemical Physics Major"]
+    major_core_complete = sum(1 for c in major_core if c["status"] == "completed")
+    major_core_total = max(len(major_core), 1)
 
     active_projects = [p for p in projects if p["status"] == "active"]
     upcoming_deadlines = [i for i in internships
@@ -339,9 +339,9 @@ def compute_stats(courses, projects, researchers, internships, learning) -> dict
         "all_courses_complete": all_courses_complete,
         "all_courses_total": all_courses_total,
         "all_courses_pct": int(all_courses_complete / all_courses_total * 100),
-        "cheme_core_complete": cheme_core_complete,
-        "cheme_core_total": cheme_core_total,
-        "cheme_core_pct": int(cheme_core_complete / cheme_core_total * 100),
+        "major_core_complete": major_core_complete,
+        "major_core_total": major_core_total,
+        "major_core_pct": int(major_core_complete / major_core_total * 100),
         "active_projects": active_projects,
         "upcoming_deadlines": upcoming_deadlines,
         "active_learning": active_learning,
@@ -469,7 +469,7 @@ def main() -> int:
 
     print(f"Built {len(pages)} pages → {SITE_DIR.relative_to(ROOT)}/")
     print(f"  All courses:            {stats['all_courses_complete']}/{stats['all_courses_total']} complete")
-    print(f"  ChemE core courses:     {stats['cheme_core_complete']}/{stats['cheme_core_total']} complete")
+    print(f"  Major courses:          {stats['major_core_complete']}/{stats['major_core_total']} complete")
     print(f"  Active projects:        {len(stats['active_projects'])}")
     print(f"  Upcoming deadlines:     {len(stats['upcoming_deadlines'])} (next 30 days)")
     return 0

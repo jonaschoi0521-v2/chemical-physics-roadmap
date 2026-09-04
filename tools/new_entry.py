@@ -210,7 +210,7 @@ TEMPLATES = {
 **Started:**
 **Completed:**
 **Time invested:** 0 hours
-**Relevance:** core-cheme | supplemental | mission-research | math-support
+**Relevance:** core-major | supplemental | mission-research | math-support
 
 ---
 
@@ -248,7 +248,7 @@ TEMPLATES = {
 
 ## Why Relevant
 
-[One sentence: how does this connect to ChemE goals or pharma/biotech mission?]
+[One sentence: how does this connect to the chemical physics track or the platform mission?]
 
 ---
 

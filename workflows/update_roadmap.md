@@ -13,11 +13,11 @@ Estimated time: 30–45 minutes.
 For each course taken this semester:
 - Change `**Status:**` to `completed`
 - Fill in `**Grade:**`
-- Write a final log entry: what you learned, what surprised you, what you'd tell yourself at the start of the semester, how it connects to ChemE or the mission
+- Write a final log entry: what you learned, what surprised you, what you'd tell yourself at the start of the semester, how it connects to the major or the mission
 
 ### 2. Update `data/courses/_index.md`
 
-Update the Status and Grade columns for all completed courses. Check if any transfer requirements are now met.
+Update the Status and Grade columns for all completed courses. Check if any major requirements are now met.
 
 ### 3. Debrief active projects
 
@@ -67,9 +67,12 @@ Open `site/index.html` and look at the full picture. Does the progress bar feel 
 
 ---
 
-## Transfer Application Checkpoint
+## Registration Checkpoint
 
-When you're approaching the CC → SEAS transfer application:
-- Run `python3 tools/status.py` and verify all transfer prerequisites are marked `completed`
-- Check `data/courses/_index.md` transfer table — every requirement should have a grade
-- Note any exceptions or pending decisions (petition for equivalency, etc.)
+Before each registration period:
+- Run `python3 tools/status.py` and confirm the upcoming semester's courses are all present
+- Check `data/courses/_index.md` — every major requirement should map to a scheduled course
+- Verify no semester exceeds Columbia College's **18-point cap** (the schedule totals are
+  computed, so read them rather than counting by hand); petition or move a course if one does
+- Confirm prerequisites and term availability for anything new — several courses in this plan
+  are offered in one term only

@@ -1,11 +1,10 @@
 # PHYS UN1403 — Intro to Classical & Quantum Waves
 
-**Status:** planned
-**Semester:** Semester III
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 5
 
 ---
 
@@ -14,6 +13,9 @@
 ---
 
 ## Log
+
+### 2026-09-04 — Dropped from the plan
+Replaced by PHYS UN2601 (honors physics sequence). Not taking this course.
 
 ---
 

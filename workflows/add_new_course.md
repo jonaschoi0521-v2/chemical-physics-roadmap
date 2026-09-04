@@ -6,7 +6,7 @@
 
 ## Option A — Course from the degree track (already scaffolded)
 
-All degree-track courses (from the Columbia ChemE PDFs) already exist as files in `data/courses/`. To activate one:
+All degree-track courses (from the Columbia Chemical Physics requirements) already exist as files in `data/courses/`. To activate one:
 
 1. Open the file (e.g., `data/courses/chem-un1403-general-chemistry-1.md`)
 2. Change `**Status:** planned` to `**Status:** in-progress`
@@ -49,8 +49,8 @@ To do it by hand instead: change `**Semester:**` in the course file, then run
 ## Naming convention
 
 Files follow `dept-code-description.md`:
-- `chen-e3110-transport-phenomena-1.md`
-- `chem-un1403-general-chemistry-1.md`
+- `phys-un1601-physics-1.md`
+- `chem-un3079-physical-chemistry-1.md`
 
 Once created, **never rename** — filenames are stable identifiers.
 
@@ -59,7 +59,7 @@ Once created, **never rename** — filenames are stable identifiers.
 ## What to fill in immediately
 
 - Status, Semester, Credits, Fulfills, Professor
-- "Why This Course Matters" — one paragraph connecting this course to your ChemE or pharma/biotech goals
+- "Why This Course Matters" — one paragraph connecting this course to the chemical physics track or the platform mission
 
 ## What to fill in over time
 

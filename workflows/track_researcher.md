@@ -1,6 +1,6 @@
 # Workflow: Track a Researcher
 
-**When to use:** When you discover a professor or researcher whose work is relevant to ChemE, biotech, or pharma — from a class, a paper, Columbia's website, or a network contact.
+**When to use:** When you discover a professor or researcher whose work is relevant to chemical physics, computational chemistry, ML-for-molecules, or biotech — from a class, a paper, Columbia's website, or a network contact.
 
 ---
 
@@ -10,7 +10,7 @@
 python3 tools/new_entry.py researcher "First Last institution"
 ```
 
-Example: `python3 tools/new_entry.py researcher "Jane Doe Columbia ChemE"`
+Example: `python3 tools/new_entry.py researcher "Jane Doe Columbia Chemical Physics"`
 
 Creates `data/research/professors/first-last-institution.md`.
 

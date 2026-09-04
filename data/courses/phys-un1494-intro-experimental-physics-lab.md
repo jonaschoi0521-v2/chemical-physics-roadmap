@@ -1,11 +1,10 @@
 # PHYS UN1494 — Intro to Experimental Physics-Lab
 
-**Status:** planned
-**Semester:** Semester VIII
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
 
 ---
 
@@ -19,6 +18,9 @@ lab for the 1400 sequence Jonas is actually taking.
 ---
 
 ## Log
+
+### 2026-09-04 — Dropped from the plan
+Replaced by PHYS UN3081 (honors physics sequence). Not taking this course.
 
 ### 2026-06-25 — Plan Restructure
 Added to replace PHYS UN3081 (intermediate lab mismatched to the intro series).

@@ -40,7 +40,7 @@ def days_until(deadline: str) -> int | None:
 
 def main() -> int:
     print(f"\n{'='*50}")
-    print(f"  ChemE Roadmap — {TODAY.strftime('%B %-d, %Y')}")
+    print(f"  Chemical Physics Roadmap — {TODAY.strftime('%B %-d, %Y')}")
     print(f"{'='*50}\n")
 
     # Courses

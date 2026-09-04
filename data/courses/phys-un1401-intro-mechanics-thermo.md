@@ -1,11 +1,10 @@
 # PHYS UN1401 — Intro to Mechanics & Thermo
 
-**Status:** planned
-**Semester:** Semester I
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
 
 ---
 
@@ -14,6 +13,9 @@
 ---
 
 ## Log
+
+### 2026-09-04 — Dropped from the plan
+Replaced by PHYS UN1601 (honors physics sequence). Not taking this course.
 
 ---
 

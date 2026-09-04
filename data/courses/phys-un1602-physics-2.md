@@ -1,10 +1,11 @@
-# PHYS UN1602 — Physics II
+# PHYS UN1602 — Physics II: Thermo, Electricity & Magnetism
 
-**Status:** waived
-**Semester:** —
+**Status:** planned
+**Semester:** Semester II
 **Credits:** 3.5
 **Fulfills:** Chemical Physics Major
 **Grade:**
+**Order:** 4
 
 ---
 
@@ -13,6 +14,9 @@
 ---
 
 ## Log
+
+### 2026-09-04 — Added to the plan
+Honors physics sequence replaces the PHYS UN1401–1403 intro series.
 
 ---
 
