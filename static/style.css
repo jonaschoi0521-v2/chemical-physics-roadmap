@@ -1,19 +1,32 @@
-/* ChemE Roadmap stylesheet — extends blog aesthetic.
-   Same token values; adds dashboard-specific patterns. */
+/* Chemical Physics Roadmap stylesheet — extends blog aesthetic.
+   Same token values; adds dashboard-specific patterns.
+
+   THEMING: every colour lives in the token blocks below. Light is the base
+   palette on bare :root. Dark redefines only the token values — never a rule.
+   If you add a colour, add a token for it in BOTH blocks; a literal hex in a
+   rule will not survive the theme switch. See DESIGN.md. */
 
 :root {
+  color-scheme: light;
+
   --bg:        #F5F1EB;
   --ink:       #2C2A26;
   --muted:     #6B6660;
   --rule:      #D9D2C7;
   --accent:    #CC785C;
   --accent-dk: #A85B40;
+  --accent-rgb: 204, 120, 92;
   --green:     #2D6A4F;
   --green-bg:  #E8F4EC;
   --amber:     #8B5000;
   --amber-bg:  #FFF3E0;
   --purple:    #6B46C1;
   --purple-bg: #F5F0FF;
+  --blue:      var(--blue);
+  --blue-bg:   var(--blue-bg);
+  --red:       var(--red);
+  --red-bg:    var(--red-bg);
+  --neutral-bg:var(--neutral-bg);
 
   --serif: Charter, "Iowan Old Style", "Source Serif Pro", "Source Serif 4",
            "Times New Roman", Georgia, serif;
@@ -24,12 +37,70 @@
   --content-width: 900px;
 }
 
+/* ── Night mode ──────────────────────────────────────────────────────────────
+   Warm charcoal rather than blue-black, so the paper character of the light
+   theme carries over. Accents lighten as they move onto the dark ground: the
+   light theme's terracotta is too dark to read on #1A1816.
+
+   Redefined twice on purpose — once for viewers whose OS asks for dark (unless
+   they have explicitly chosen light here), once for the in-page toggle, so the
+   toggle wins in both directions. Only values change; no rule is repeated. */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+  --bg:        #1A1816;
+  --ink:       #E8E3DA;
+  --muted:     #9B948A;
+  --rule:      #35312B;
+  --accent:    #E0916F;
+  --accent-dk: #F0AC8C;
+  --accent-rgb: 224, 145, 111;
+  --green:     #7FD1A6;
+  --green-bg:  #1B2E24;
+  --amber:     #E0A458;
+  --amber-bg:  #33260F;
+  --purple:    #B79CF0;
+  --purple-bg: #262038;
+  --blue:      #7FB5E8;
+  --blue-bg:   #16283A;
+  --red:       #EFA0A0;
+  --red-bg:    #3A1E1E;
+  --neutral-bg:#2A2724;
+  --surface:   #221F1C;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg:        #1A1816;
+  --ink:       #E8E3DA;
+  --muted:     #9B948A;
+  --rule:      #35312B;
+  --accent:    #E0916F;
+  --accent-dk: #F0AC8C;
+  --accent-rgb: 224, 145, 111;
+  --green:     #7FD1A6;
+  --green-bg:  #1B2E24;
+  --amber:     #E0A458;
+  --amber-bg:  #33260F;
+  --purple:    #B79CF0;
+  --purple-bg: #262038;
+  --blue:      #7FB5E8;
+  --blue-bg:   #16283A;
+  --red:       #EFA0A0;
+  --red-bg:    #3A1E1E;
+  --neutral-bg:#2A2724;
+  --surface:   #221F1C;
+}
+
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 
 body {
   background: var(--bg);
   color: var(--ink);
+  transition: background-color 0.18s ease, color 0.18s ease;
   font-family: var(--sans);
   font-size: 15px;
   line-height: 1.6;
@@ -119,7 +190,7 @@ footer.site {
 /* ── Mission banner ── */
 
 .mission {
-  background: rgba(204, 120, 92, 0.07);
+  background: rgba(var(--accent-rgb), 0.07);
   border-left: 3px solid var(--accent);
   padding: 12px 16px;
   border-radius: 0 4px 4px 0;
@@ -210,19 +281,19 @@ footer.site {
 
 .badge-completed, .badge-accepted    { background: var(--green-bg); color: var(--green); }
 .badge-active, .badge-in-progress    { background: var(--amber-bg); color: var(--amber); }
-.badge-planned, .badge-identified    { background: #F0F0F0; color: var(--muted); }
+.badge-planned, .badge-identified    { background: var(--neutral-bg); color: var(--muted); }
 .badge-paused, .badge-ideation       { background: var(--purple-bg); color: var(--purple); }
-.badge-waived, .badge-withdrawn      { background: #F0F0F0; color: var(--muted); font-style: italic; }
-.badge-contacted                     { background: #E3F2FD; color: #1565C0; }
+.badge-waived, .badge-withdrawn      { background: var(--neutral-bg); color: var(--muted); font-style: italic; }
+.badge-contacted                     { background: var(--blue-bg); color: var(--blue); }
 .badge-meeting-scheduled             { background: var(--amber-bg); color: var(--amber); }
 .badge-active-relationship           { background: var(--green-bg); color: var(--green); }
-.badge-cold                          { background: #F0F0F0; color: var(--muted); }
+.badge-cold                          { background: var(--neutral-bg); color: var(--muted); }
 .badge-drafting                      { background: var(--purple-bg); color: var(--purple); }
-.badge-submitted                     { background: #E3F2FD; color: #1565C0; }
+.badge-submitted                     { background: var(--blue-bg); color: var(--blue); }
 .badge-interviewing                  { background: var(--amber-bg); color: var(--amber); }
 .badge-offered                       { background: var(--green-bg); color: var(--green); }
-.badge-rejected                      { background: #FEE2E2; color: #991B1B; }
-.badge-abandoned                     { background: #F0F0F0; color: var(--muted); font-style: italic; }
+.badge-rejected                      { background: var(--red-bg); color: var(--red); }
+.badge-abandoned                     { background: var(--neutral-bg); color: var(--muted); font-style: italic; }
 
 /* ── Dashboard stat cards ── */
 
@@ -234,7 +305,7 @@ footer.site {
 }
 
 .stat-card {
-  background: white;
+  background: var(--surface);
   border: 1px solid var(--rule);
   border-radius: 8px;
   padding: 20px;
@@ -270,7 +341,7 @@ footer.site {
   padding: 18px 20px;
   flex: 1;
   min-width: 240px;
-  background: white;
+  background: var(--surface);
 }
 
 .card-title {
@@ -337,7 +408,7 @@ footer.site {
 .prof-table td:nth-child(3) { line-height: 1.5; }
 
 .data-table tr:last-child td { border-bottom: none; }
-.data-table tr:hover td { background: rgba(204, 120, 92, 0.04); }
+.data-table tr:hover td { background: rgba(var(--accent-rgb), 0.04); }
 
 .data-table .course-name {
   font-weight: 500;
@@ -375,7 +446,7 @@ footer.site {
 
 .timeline-col.milestone {
   border-left: 2px solid var(--accent);
-  background: rgba(204, 120, 92, 0.05);
+  background: rgba(var(--accent-rgb), 0.05);
 }
 
 .timeline-col.now {
@@ -471,7 +542,7 @@ footer.site {
   letter-spacing: 0.04em;
 }
 
-.deadline-days.urgent { color: #991B1B; }
+.deadline-days.urgent { color: var(--red); }
 
 .deadline-name { color: var(--ink); flex: 1; }
 .deadline-org  { color: var(--muted); font-size: 12px; }
@@ -520,7 +591,7 @@ footer.site {
   font-family: "Courier New", monospace;
   font-size: 11px;
   font-weight: 700;
-  color: #2D6A4F;
+  color: var(--green);
 }
 
 .reg-sem-header {
@@ -648,7 +719,7 @@ footer.site {
 .reg-table tr.reg-draggable { cursor: grab; }
 
 .reg-table tr.reg-draggable:hover td {
-  background: rgba(204, 120, 92, 0.07);
+  background: rgba(var(--accent-rgb), 0.07);
 }
 
 .reg-table tr.is-dragging {
@@ -657,12 +728,12 @@ footer.site {
 }
 
 .reg-table tr.is-dragging td {
-  background: rgba(204, 120, 92, 0.14);
+  background: rgba(var(--accent-rgb), 0.14);
 }
 
 .reg-transfer {
-  background: rgba(204, 120, 92, 0.08);
-  border: 1px solid rgba(204, 120, 92, 0.3);
+  background: rgba(var(--accent-rgb), 0.08);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
   border-left: 3px solid var(--accent);
   border-radius: 4px;
   padding: 12px 18px;
@@ -744,4 +815,47 @@ footer.site {
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
   .progress-label { min-width: 140px; font-size: 12px; }
   header.site nav { gap: 12px; }
+}
+
+/* ── Day / night toggle ── */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1;
+  padding: 4px 7px;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--rule);
+  background: rgba(var(--accent-rgb), 0.07);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body, .theme-toggle { transition: none; }
+}
+
+/* Inverted code block — reads as "terminal" in both themes because it swaps
+   the two ground tokens rather than naming colours of its own. */
+
+.code-block {
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  overflow-x: auto;
 }

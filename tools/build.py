@@ -428,7 +428,7 @@ def main() -> int:
     researchers = load_researchers()
     internships = load_internships()
     learning = load_learning()
-    notes = load_notes()
+    notes = load_notes()  # kept loaded; the Notes page is unwired (see pages below)
     stats = compute_stats(courses, projects, researchers, internships, learning)
 
     common = {
@@ -460,7 +460,6 @@ def main() -> int:
         ("professors.html", "professors.html", {"professors": PROFESSORS}),
         ("research.html", "research.html", {"researchers": researchers, "learning": learning}),
         ("internships.html", "internships.html", {"internships": internships}),
-        ("notes.html", "notes.html", {"notes": notes}),
     ]
 
     for template_name, out_name, ctx in pages:
