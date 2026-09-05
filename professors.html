@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Professors — Jonas Choi</title>
   <link rel="stylesheet" href="static/style.css">
+  <script>
+    // Runs before paint so a night-mode viewer never sees a flash of the light theme.
+    // No stored choice means no attribute, which leaves the OS preference in charge.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <header class="site">
@@ -23,7 +35,7 @@
           <a href="professors.html" class="active">Professors</a>
           <a href="research.html" >Research</a>
           <a href="internships.html" >Opportunities</a>
-          <a href="notes.html" >Notes</a>
+          <button class="theme-toggle" type="button" aria-label="Switch colour theme">☾</button>
         </nav>
       </div>
     </div>
@@ -205,8 +217,41 @@
 
   <footer class="site">
     <div class="wrap">
-      Jonas Choi &middot; Columbia University &middot; Built September 4, 2026
+      Jonas Choi &middot; Columbia University &middot; Built September 5, 2026
     </div>
   </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector('.theme-toggle');
+      if (!btn) return;
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function current() {
+        return root.getAttribute('data-theme') || (mq.matches ? 'dark' : 'light');
+      }
+
+      function label(theme) {
+        var toDark = theme !== 'dark';
+        btn.textContent = toDark ? '\u263E' : '\u2600';
+        btn.setAttribute('aria-label', toDark ? 'Switch to night mode' : 'Switch to day mode');
+        btn.title = btn.getAttribute('aria-label');
+      }
+
+      label(current());
+
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        label(next);
+      });
+
+      // While the viewer has made no choice here, keep following the OS.
+      mq.addEventListener('change', function (e) {
+        if (!root.getAttribute('data-theme')) label(e.matches ? 'dark' : 'light');
+      });
+    })();
+  </script>
 </body>
 </html>
