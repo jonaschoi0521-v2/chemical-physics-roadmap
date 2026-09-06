@@ -1,11 +1,11 @@
 # MATH UN2015 — Linear Algebra and Probability
 
 **Status:** planned
-**Semester:** Semester III
+**Semester:** Semester IV
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
+**Order:** 3
 
 ---
 

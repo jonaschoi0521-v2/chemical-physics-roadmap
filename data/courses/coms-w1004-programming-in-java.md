@@ -1,11 +1,10 @@
 # COMS W1004 — Programming in Java
 
-**Status:** planned
-**Semester:** Semester IV
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Builder Stack
 **Grade:**
-**Order:** 2
 
 ---
 
@@ -14,6 +13,9 @@
 ---
 
 ## Log
+
+### 2026-09-05 — Dropped from the plan
+Dropped — covering Java and programming fundamentals by self-study instead.
 
 ---
 

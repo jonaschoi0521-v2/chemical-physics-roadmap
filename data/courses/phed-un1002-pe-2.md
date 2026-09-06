@@ -1,11 +1,11 @@
 # PHED UN1002 — Physical Education II
 
 **Status:** planned
-**Semester:** Semester VI
+**Semester:** Semester VIII
 **Credits:** 1
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 5
+**Order:** 2
 
 ---
 

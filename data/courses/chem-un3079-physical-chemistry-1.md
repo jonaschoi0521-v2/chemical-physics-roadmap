@@ -1,11 +1,11 @@
 # CHEM UN3079 — Physical Chemistry I
 
 **Status:** planned
-**Semester:** Semester V
+**Semester:** Semester III
 **Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
+**Order:** 3
 
 ---
 

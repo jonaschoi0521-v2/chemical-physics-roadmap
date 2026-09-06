@@ -1,11 +1,10 @@
 # COMS W3134 — Data Structures in Java
 
-**Status:** planned
-**Semester:** Semester V
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Builder Stack
 **Grade:**
-**Order:** 3
 
 ---
 
@@ -14,6 +13,9 @@
 ---
 
 ## Log
+
+### 2026-09-05 — Dropped from the plan
+Dropped — covering data structures by self-study instead.
 
 ---
 

@@ -1,11 +1,10 @@
 # COMS E4776 — Neural Networks & Deep Learning
 
-**Status:** planned
-**Semester:** Semester VII
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Builder Stack
 **Grade:**
-**Order:** 4
 
 ---
 
@@ -14,6 +13,9 @@
 ---
 
 ## Log
+
+### 2026-09-05 — Dropped from the plan
+Cut for the same reason as COMS W4771, and it depended on W4771 anyway.
 
 ---
 

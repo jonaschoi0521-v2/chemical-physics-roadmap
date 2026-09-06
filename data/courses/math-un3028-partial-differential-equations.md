@@ -1,11 +1,10 @@
 # MATH UN3028 — Partial Differential Equations
 
-**Status:** planned
-**Semester:** Semester V
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
 
 ---
 
@@ -14,6 +13,10 @@
 ---
 
 ## Log
+
+### 2026-09-05 — Replaced
+Replaced by APMA E4200, the fall-term PDE course. Same subject and same 3 points;
+the applied-math version leans nearer the numerical side this work actually uses.
 
 ---
 

@@ -1,11 +1,11 @@
 # CHEM GR6222 — Quantum Chemistry II
 
 **Status:** planned
-**Semester:** Semester VIII
+**Semester:** Semester VI
 **Credits:** 2.5
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
+**Order:** 4
 
 ---
 
@@ -22,6 +22,13 @@ the undergraduate Chemical Physics major, and that GU4221 is the only prerequisi
 ---
 
 ## Log
+
+### 2026-09-05 — Restored to the plan
+Rolled back from the physics equivalent: the physics quantum sequence needs advanced
+physics prerequisites that arrive too late in this schedule to be reachable.
+
+### 2026-09-05 — Dropped from the plan
+Replaced by PHYS GU4022 Quantum Mechanics II.
 
 ### 2026-06-25 — Plan Restructure
 Added to replace PHYS GU4022. See semester restructure prompted by the Orgo

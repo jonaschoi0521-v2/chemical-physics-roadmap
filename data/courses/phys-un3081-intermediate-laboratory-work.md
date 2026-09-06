@@ -1,11 +1,11 @@
 # PHYS UN3081 — Intermediate Laboratory Work
 
 **Status:** planned
-**Semester:** Semester VIII
+**Semester:** Semester VII
 **Credits:** 2
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 3
+**Order:** 5
 
 ---
 

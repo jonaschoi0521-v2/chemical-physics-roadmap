@@ -1,7 +1,7 @@
 # CHEM GU4221 — Quantum Chemistry I
 
 **Status:** planned
-**Semester:** Semester VII
+**Semester:** Semester V
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
@@ -24,6 +24,13 @@ world (Friesner, Schrödinger) this roadmap aims at — more so than abstract QM
 ---
 
 ## Log
+
+### 2026-09-05 — Restored to the plan
+Rolled back from the physics equivalent: the physics quantum sequence needs advanced
+physics prerequisites that arrive too late in this schedule to be reachable.
+
+### 2026-09-05 — Dropped from the plan
+Replaced by PHYS GU4021 Quantum Mechanics I. The major accepts either one.
 
 ### 2026-06-25 — Plan Restructure
 Added to replace PHYS GU4021. See semester restructure prompted by the Orgo

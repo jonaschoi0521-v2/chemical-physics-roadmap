@@ -1,11 +1,11 @@
 # CHEM UN3080 — Physical Chemistry II
 
 **Status:** planned
-**Semester:** Semester VI
+**Semester:** Semester IV
 **Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 2
+**Order:** 1
 
 ---
 

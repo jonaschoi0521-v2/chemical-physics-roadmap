@@ -31,8 +31,9 @@ TYPE_BY_FULFILLS = {
     "Core Curriculum": "Core",
     "Chemical Physics Major": "Major",
     "Builder Stack": "Builder",
+    "Elective": "Elective",
 }
-TYPE_ORDER = ["Core", "Major", "Builder"]
+TYPE_ORDER = ["Core", "Major", "Builder", "Elective"]
 
 
 def pts(value: str | float) -> str:

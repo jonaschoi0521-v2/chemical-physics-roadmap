@@ -1,11 +1,10 @@
 # CHAP E4120 — Statistical Mechanics & Computational Methods
 
-**Status:** planned
-**Semester:** Semester VI
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
 
 ---
 
@@ -36,6 +35,17 @@ Make sure Python is solid before taking it.
 ---
 
 ## Log
+
+### 2026-09-05 — Replaced
+Replaced by CHEM GU4230 (Statistical Thermodynamics, 4.5pt) — same subject, more depth,
+and inside the chemistry department rather than chemical engineering.
+
+### 2026-09-05 — Restored to the plan
+Rolled back from the physics equivalent: the physics quantum sequence needs advanced
+physics prerequisites that arrive too late in this schedule to be reachable.
+
+### 2026-09-05 — Dropped from the plan
+Replaced by PHYS GR6036 Statistical Mechanics (4.5pt) — the harder, full graduate treatment.
 
 ### 2026-06-29 — Added
 Added to close the statistical-mechanics / molecular-simulation gap. Global Core I
