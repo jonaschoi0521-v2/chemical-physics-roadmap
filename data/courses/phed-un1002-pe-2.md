@@ -5,7 +5,7 @@
 **Credits:** 1
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 2
+**Order:** 4
 
 ---
 

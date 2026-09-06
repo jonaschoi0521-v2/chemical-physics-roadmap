@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-09-05 — **do not edit by hand.**
+Last generated: 2026-09-06 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
@@ -40,7 +40,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Electromagnetic Waves & Optics | PHYS UN3008 | 3 | planned | Semester VI |  |
 | Intermediate Laboratory Work | PHYS UN3081 | 2 | planned | Semester VII |  |
 
-## Mathematics — 15pt
+## Mathematics — 21pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -49,14 +49,10 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Linear Algebra and Probability | MATH UN2015 | 3 | planned | Semester IV |  |
 | Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester IV |  |
 | Partial Differential Equations | APMA E4200 | 3 | planned | Semester V |  |
+| Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester VII |  |
+| Methods in Computational Science | APMA E4302 | 3 | planned | Semester VIII |  |
 
-## Builder Stack — CS & ML — 4pt
-
-| Course | Code | Credits | Status | Semester | Grade |
-|---|---|---|---|---|---|
-| Discrete Mathematics | COMS W3203 | 4 | planned | Semester VII |  |
-
-## Core Curriculum — 37pt
+## Core Curriculum — 39pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -66,12 +62,12 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Frontiers of Science | SCNC CC1000 | 4 | planned | Semester II |  |
 | Contemporary Civilization I | COCI CC1101 | 4 | planned | Semester III |  |
 | Contemporary Civilization II | COCI CC1102 | 4 | planned | Semester IV |  |
-| Art Humanities | HUMA UN1121 | 3 | planned | Semester VII |  |
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
+| Global Core I | — | 4 | planned | Semester VII |  |
 | Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
 | Physical Education II | PHED UN1002 | 1 | planned | Semester VIII |  |
-| Global Core II | — | 3 | planned | Semester VIII |  |
-| Global Core I | — | 3 | planned | Semester VIII |  |
+| Global Core II | — | 4 | planned | Semester VIII |  |
+| Art Humanities | HUMA UN1121 | 3 | planned | Semester VIII |  |
 
 ---
 
@@ -86,8 +82,8 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester V | 17.5 |
 | Semester VI | 18 |
 | Semester VII | 12 |
-| Semester VIII | 10 |
-| **Total** | **129** |
+| Semester VIII | 14 |
+| **Total** | **133** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
@@ -101,6 +97,7 @@ Kept as files so the decision stays on the record.
 - COMS E4776 — Neural Networks & Deep Learning
 - COMS W1004 — Programming in Java
 - COMS W3134 — Data Structures in Java
+- COMS W3203 — Discrete Mathematics
 - COMS W4771 — Machine Learning
 - MATH UN3028 — Partial Differential Equations
 - PHYS GR6036 — Statistical Mechanics

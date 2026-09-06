@@ -1,11 +1,11 @@
 # Global Core I
 
 **Status:** planned
-**Semester:** Semester VIII
-**Credits:** 3
+**Semester:** Semester VII
+**Credits:** 4
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 4
+**Order:** 5
 
 ---
 

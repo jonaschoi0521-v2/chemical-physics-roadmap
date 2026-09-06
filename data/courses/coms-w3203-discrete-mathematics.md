@@ -1,11 +1,10 @@
 # COMS W3203 — Discrete Mathematics
 
-**Status:** planned
-**Semester:** Semester VII
+**Status:** waived
+**Semester:** —
 **Credits:** 4
 **Fulfills:** Builder Stack
 **Grade:**
-**Order:** 2
 
 ---
 
@@ -22,6 +21,11 @@ courses it was originally grouped beside.
 ---
 
 ## Log
+
+### 2026-09-05 — Dropped from the plan
+Cut. It was retained earlier as mathematics, but its instrumental value was as the
+COMS W4771 prerequisite, and W4771 is gone. Combinatorics and finite proof technique
+are further from this work than the numerical methods taking its place.
 
 ### 2026-09-05 — Retained
 Survived the cut of COMS W1004, W3134, W4771 and E4776. Reclassified in intent as
