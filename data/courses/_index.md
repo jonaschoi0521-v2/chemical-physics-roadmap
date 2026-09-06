@@ -52,7 +52,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester VII |  |
 | Methods in Computational Science | APMA E4302 | 3 | planned | Semester VIII |  |
 
-## Core Curriculum — 39pt
+## Core Curriculum — 38pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -65,9 +65,9 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
 | Global Core I | — | 4 | planned | Semester VII |  |
 | Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
-| Physical Education II | PHED UN1002 | 1 | planned | Semester VIII |  |
-| Global Core II | — | 4 | planned | Semester VIII |  |
 | Art Humanities | HUMA UN1121 | 3 | planned | Semester VIII |  |
+| Physical Education II | PHED UN1002 | 1 | planned | Semester VIII |  |
+| Global Core II | — | 3 | planned | Semester VIII |  |
 
 ---
 
@@ -82,8 +82,8 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester V | 17.5 |
 | Semester VI | 18 |
 | Semester VII | 12 |
-| Semester VIII | 14 |
-| **Total** | **133** |
+| Semester VIII | 13 |
+| **Total** | **132** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
