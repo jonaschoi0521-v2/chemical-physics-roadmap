@@ -369,6 +369,16 @@ ROADMAP_SEMESTERS = [
 # ── Professor data ────────────────────────────────────────────────────────────
 
 PROFESSORS = [
+    # ── Columbia Chemistry, theoretical faculty ────────────────────────────────
+    # Selected on training and method-building rather than the commercialization
+    # signal that orders the rest of this list. Kept at the top deliberately.
+    {"name": "Richard Friesner",         "division": "Theoretical",   "why": "Computational chemistry → built Glide, WaterMap, Jaguar → co-founded Schrödinger (NASDAQ: SDGR); the infrastructure the entire field runs on; NAS member"},
+    {"name": "Timothy Berkelbach",       "division": "Theoretical",   "why": "Excited-state electronic structure and spectroscopy; co-author of PySCF, the open-source quantum chemistry framework the field builds on; also Flatiron Institute (CCQ). Sloan Fellow, NSF CAREER"},
+    {"name": "David Reichman",           "division": "Theoretical",   "why": "Condensed-phase dynamics and disordered materials; helped bring AFQMC to state-of-the-art electronic structure for large molecules; many-body embedding for quantum chemistry; NAS member"},
+    {"name": "Diptarka Hait",            "division": "Theoretical",   "why": "Excited-state methods for photocatalysis and light-driven chemistry; Head-Gordon PhD; lab opened July 2025 — newest group in the department and the best undergraduate access; also Flatiron"},
+    {"name": "Angelo Cacciuto",          "division": "Theoretical",   "why": "Statistical physics and simulation of soft matter — membranes, self-assembly, active matter; closest research match to the LNP work; Department Chair"},
+
+    # ── Translational / commercial scouting list ───────────────────────────────
     {"name": "Cory Abate-Shen",          "division": "CUMC",          "why": "Cancer systems biology → Selisistat (SIRT1 inhibitor) tested in mouse models; FOXM1/CENPF as druggable prostate cancer targets; NAS member"},
     {"name": "Hashim Al-Hashimi",        "division": "CUMC",          "why": "NMR chemistry → RNA conformational dynamics → co-founded Nymirum + Base4 (2023, active); RNA-targeted small molecules fastest-growing drug modality"},
     {"name": "Mohammed AlQuraishi",      "division": "Computational", "why": "ML + structural chemistry → OpenFold3; AbbVie and J&J directly training his model on proprietary protein-drug data (2025)"},
@@ -379,7 +389,6 @@ PROFESSORS = [
     {"name": "Henry Colecraft",          "division": "CUMC",          "why": "Ion channel biology → enDUB platform → Stablix ($63M Series A) + Flux Therapeutics; active pharma collaboration with DyNAbind"},
     {"name": "Santiago Correa",          "division": "BME",           "why": "Materials chemistry → bioinspired LNPs for immune reprogramming; direct fit with SNU ionizable lipid work; new lab (2023), actively building, on main campus"},
     {"name": "Tal Danino",               "division": "BME",           "why": "Synthetic biology → probiotic tumor-colonizing cancer vaccine; Nature 2024; active Columbia Tech Ventures licensing (CU18339)"},
-    {"name": "Richard Friesner",         "division": "Computational", "why": "Computational chemistry → built Glide, WaterMap, Jaguar → co-founded Schrödinger (NASDAQ: SDGR); the infrastructure the entire field runs on; NAS member"},
     {"name": "Oleg Gang",                "division": "ChemE",         "why": "DNA nanotechnology → origami delivers doxorubicin to HER2+ cells; Brookhaven patent; Vannevar Bush Fellow 2024"},
     {"name": "Barry Honig",              "division": "Computational", "why": "Built DelPhi and GRASP (foundational electrostatics); PrePCI (proteome-scale protein-compound predictions) embedded in commercial pharma pipelines; former HHMI"},
     {"name": "Jonathan Javitch",         "division": "CUMC",          "why": "GPCR pharmacology → licensed drug discovery platform (CU15098); GPCRs are targets of ~35% of all approved drugs"},
