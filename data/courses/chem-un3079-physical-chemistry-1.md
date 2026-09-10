@@ -5,7 +5,7 @@
 **Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 3
+**Order:** 2
 
 ---
 

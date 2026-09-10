@@ -1,7 +1,7 @@
 # MATH UN1202 — Calculus IV
 
 **Status:** planned
-**Semester:** Semester II
+**Semester:** Semester I
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

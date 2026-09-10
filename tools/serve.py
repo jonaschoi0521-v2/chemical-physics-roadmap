@@ -9,6 +9,8 @@ endpoint, so it stays a static, read-only page.
 Endpoints (localhost only):
     GET  /api/ping     -> {"ok": true}   the page's edit-mode probe
     POST /api/reorder  -> apply a new course arrangement
+    POST /api/remove   -> take a course off the schedule (waives it, keeps the file)
+    POST /api/add      -> scaffold a new course into a semester
 """
 
 from __future__ import annotations
@@ -24,6 +26,7 @@ import socketserver
 import subprocess
 import sys
 import webbrowser
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -78,8 +81,103 @@ def apply_reorder(semesters: list[dict]) -> list[str]:
     return changed
 
 
+def slugify(text: str) -> str:
+    s = re.sub(r"[^\w\s-]", "", text.lower())
+    return re.sub(r"[\s_]+", "-", s.strip())[:60]
+
+
+def known_files() -> set[str]:
+    return {p.name for p in COURSE_DIR.glob("*.md") if not p.name.startswith("_")}
+
+
+def remove_course(filename: str) -> str:
+    """Take a course off the schedule.
+
+    Waives rather than deletes: the file, its log and its reasoning stay in the
+    repo, which is the same convention every dropped course here follows. The
+    build skips waived courses, so it disappears from the site and the totals.
+    """
+    if filename not in known_files():
+        raise ValueError(f"unknown course file: {filename!r}")
+    path = COURSE_DIR / filename
+    text = path.read_text(encoding="utf-8")
+    text = set_field(text, "Status", "waived")
+    text = set_field(text, "Semester", "—")
+    text = re.sub(r"^\*\*Order:\*\*.*\n", "", text, count=1, flags=re.MULTILINE)
+    path.write_text(text, encoding="utf-8")
+    return filename
+
+
+def next_order(label: str) -> int:
+    """One past the highest explicit Order already in that semester."""
+    highest = 0
+    for path in COURSE_DIR.glob("*.md"):
+        if path.name.startswith("_"):
+            continue
+        text = path.read_text(encoding="utf-8")
+        if re.search(rf"^\*\*Semester:\*\* {re.escape(label)}\s*$", text, re.MULTILINE):
+            found = re.search(r"^\*\*Order:\*\*[ \t]*([\d.]+)", text, re.MULTILINE)
+            if found:
+                highest = max(highest, int(float(found.group(1))))
+    return highest + 1
+
+
+def add_course(label: str, code: str, name: str, credits: str) -> str:
+    """Scaffold a new course file, placed at the end of the given semester."""
+    if label not in VALID_SEMESTERS:
+        raise ValueError(f"unknown semester: {label!r}")
+    code, name = code.strip(), name.strip()
+    if not code or not name:
+        raise ValueError("code and name are both required")
+    try:
+        credits = f"{float(credits):g}"
+    except (TypeError, ValueError):
+        raise ValueError(f"credits must be a number, got {credits!r}")
+
+    filename = f"{slugify(code)}-{slugify(name)}.md"
+    path = COURSE_DIR / filename
+    if path.exists():
+        raise ValueError(f"{filename} already exists")
+
+    path.write_text(f"""# {code} — {name}
+
+**Status:** planned
+**Semester:** {label}
+**Credits:** {credits}
+**Fulfills:**
+**Grade:**
+**Order:** {next_order(label)}
+
+---
+
+## Why This Course Matters
+
+[Added from the registration page. Fill in why this course is here.]
+
+---
+
+## Log
+
+### {date.today().isoformat()} — Added to the plan
+
+---
+
+## Key Concepts
+
+---
+
+## Resources Used
+
+---
+
+## Connections
+""", encoding="utf-8")
+    return filename
+
+
 def rebuild() -> None:
-    for script in ("build.py", "sync_schedule.py"):
+    for script in ("build.py", "sync_schedule.py",
+                   "sync_course_plan.py", "sync_index.py"):
         subprocess.run([sys.executable, str(ROOT / "tools" / script)],
                        capture_output=True)
 
@@ -107,19 +205,31 @@ class EditHandler(http.server.SimpleHTTPRequestHandler):
         super().do_GET()
 
     def do_POST(self) -> None:
-        if self.path.split("?")[0] != "/api/reorder":
+        route = self.path.split("?")[0]
+        if route not in ("/api/reorder", "/api/remove", "/api/add"):
             self.send_error(404, "No such endpoint")
             return
         try:
             length = int(self.headers.get("Content-Length") or 0)
             payload = json.loads(self.rfile.read(length) or b"{}")
-            changed = apply_reorder(payload.get("semesters", []))
+            if route == "/api/reorder":
+                changed = apply_reorder(payload.get("semesters", []))
+                verb = "reordered"
+            elif route == "/api/remove":
+                changed = [remove_course(payload.get("file", ""))]
+                verb = "removed"
+            else:
+                changed = [add_course(payload.get("semester", ""),
+                                      payload.get("code", ""),
+                                      payload.get("name", ""),
+                                      payload.get("credits", ""))]
+                verb = "added"
         except Exception as exc:
             self._json(400, {"ok": False, "error": str(exc)})
             return
         rebuild()
         # flush: stdout is block-buffered when this runs detached from a terminal.
-        print(f"  reordered: {', '.join(changed) if changed else '(no change)'}",
+        print(f"  {verb}: {', '.join(changed) if changed else '(no change)'}",
               flush=True)
         self._json(200, {"ok": True, "changed": changed})
 

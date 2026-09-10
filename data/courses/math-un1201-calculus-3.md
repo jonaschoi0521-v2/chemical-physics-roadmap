@@ -1,11 +1,10 @@
 # MATH UN1201 — Calculus III
 
-**Status:** planned
-**Semester:** Semester I
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
 
 ---
 

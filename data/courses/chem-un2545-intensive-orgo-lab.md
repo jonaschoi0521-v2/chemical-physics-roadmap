@@ -1,11 +1,11 @@
 # CHEM UN2545 — Intensive Organic Chemistry Lab
 
 **Status:** planned
-**Semester:** Semester III
+**Semester:** Semester IV
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 2
+**Order:** 1
 
 ---
 
