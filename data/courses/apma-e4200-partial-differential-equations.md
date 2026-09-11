@@ -52,5 +52,5 @@ second-tier behind quantum mechanics and statistical mechanics.
 
 ## Connections
 
-Completes the math chain — MATH UN1201/UN1202 → UN2015 → UN2030 → here. Underpins
+Completes the math chain — MATH UN1205 → UN2015 → UN2030 → here. Underpins
 solvation and kinetics in CHEM GU4230 and the modelling work in CHEM GU4232.

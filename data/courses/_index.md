@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-09-10 — **do not edit by hand.**
+Last generated: 2026-09-11 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
@@ -40,11 +40,11 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Electromagnetic Waves & Optics | PHYS UN3008 | 3 | planned | Semester VI |  |
 | Intermediate Laboratory Work | PHYS UN3081 | 2 | planned | Semester VII |  |
 
-## Mathematics — 18pt
+## Mathematics — 19pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
-| Calculus IV | MATH UN1202 | 3 | planned | Semester I |  |
+| Accelerated Multivariable Calculus | MATH UN1205 | 4 | planned | Semester I |  |
 | Linear Algebra and Probability | MATH UN2015 | 3 | planned | Semester III |  |
 | Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester IV |  |
 | Partial Differential Equations | APMA E4200 | 3 | planned | Semester V |  |
@@ -74,7 +74,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 
 | Semester | Points |
 |---|---|
-| Semester I | 16.5 |
+| Semester I | 17.5 |
 | Semester II | 16.5 |
 | Semester III | 18.5 |
 | Semester IV | 17 |
@@ -82,7 +82,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester VI | 18 |
 | Semester VII | 12 |
 | Semester VIII | 13 |
-| **Total** | **129** |
+| **Total** | **130** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
@@ -99,6 +99,7 @@ Kept as files so the decision stays on the record.
 - COMS W3203 — Discrete Mathematics
 - COMS W4771 — Machine Learning
 - MATH UN1201 — Calculus III
+- MATH UN1202 — Calculus IV
 - MATH UN3028 — Partial Differential Equations
 - PHYS GR6036 — Statistical Mechanics
 - PHYS GU4021 — Quantum Mechanics I
