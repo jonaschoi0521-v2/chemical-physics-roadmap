@@ -8,7 +8,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 
 ---
 
-## Chemistry — 53.5pt
+## Chemistry — 55pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -16,7 +16,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Intensive Organic Chemistry | CHEM UN2045 | 4 | planned | Semester II |  |
 | Intensive Organic Chemistry for 1st Year | CHEM UN2046 | 4 | planned | Semester III |  |
 | Physical Chemistry I | CHEM UN3079 | 4 | planned | Semester III |  |
-| Quantum Chemistry I | CHEM GU4221 | 3 | planned | Semester III |  |
+| Quantum Chemistry I | CHEM GU4221 | 4.5 | planned | Semester III |  |
 | Physical Chemistry II | CHEM UN3080 | 4 | planned | Semester IV |  |
 | Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester IV |  |
 | Intensive Organic Chemistry Lab | CHEM UN2545 | 3 | planned | Semester V |  |
@@ -75,13 +75,13 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 |---|---|
 | Semester I | 17.5 |
 | Semester II | 17.5 |
-| Semester III | 18.5 |
+| Semester III | 20 |
 | Semester IV | 17.5 |
 | Semester V | 17.5 |
 | Semester VI | 14.5 |
 | Semester VII | 12 |
 | Semester VIII | 13 |
-| **Total** | **128** |
+| **Total** | **129.5** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
