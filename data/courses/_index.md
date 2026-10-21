@@ -46,7 +46,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 |---|---|---|---|---|---|
 | Accelerated Multivariable Calculus | MATH UN1205 | 4 | planned | Semester I |  |
 | Linear Algebra and Probability | MATH UN2015 | 3 | planned | Semester II |  |
-| Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester II |  |
+| Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester IV |  |
 | Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester V |  |
 | Methods in Computational Science | APMA E4302 | 3 | planned | Semester VI |  |
 
@@ -57,9 +57,9 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | University Writing | ENGL CC1010 | 3 | planned | Semester I |  |
 | Literature Humanities I | HUMA CC1001 | 4 | planned | Semester I |  |
 | Literature Humanities II | HUMA CC1002 | 4 | planned | Semester II |  |
+| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester II |  |
 | Contemporary Civilization I | COCI CC1101 | 4 | planned | Semester III |  |
 | Contemporary Civilization II | COCI CC1102 | 4 | planned | Semester IV |  |
-| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester IV |  |
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
 | Global Core I | — | 3 | planned | Semester VII |  |
 | Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
@@ -74,9 +74,9 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester | Points |
 |---|---|
 | Semester I | 17.5 |
-| Semester II | 17.5 |
+| Semester II | 18.5 |
 | Semester III | 20 |
-| Semester IV | 17.5 |
+| Semester IV | 16.5 |
 | Semester V | 17.5 |
 | Semester VI | 14.5 |
 | Semester VII | 12 |
