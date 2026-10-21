@@ -8,7 +8,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 
 ---
 
-## Chemistry — 49.5pt
+## Chemistry — 53.5pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -25,7 +25,8 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Physical-Analytical Laboratory II | CHEM UN3086 | 4 | planned | Semester VI |  |
 | Intro to Molecular Modeling | CHEM GU4232 | 4.5 | planned | Semester VI |  |
 | Senior Seminar | CHEM UN3920 | 2 | planned | Semester VII |  |
-| Supervised Independent Research | CHEM UN3098 | 3 | planned | Semester VIII |  |
+| Supervised Independent Research I | CHEM UN3098 | 4 | planned | Semester VII |  |
+| Supervised Independent Research II | CHEM UN3098 | 3 | planned | Semester VIII |  |
 
 ## Physics — 21.5pt
 
@@ -39,7 +40,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Electromagnetic Waves & Optics | PHYS UN3008 | 3 | planned | Semester VI |  |
 | Intermediate Laboratory Work | PHYS UN3081 | 2 | planned | Semester VII |  |
 
-## Mathematics — 22pt
+## Mathematics — 16pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -48,8 +49,6 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester II |  |
 | Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester V |  |
 | Methods in Computational Science | APMA E4302 | 3 | planned | Semester VI |  |
-| Probability Theory | STAT GU4203 | 3 | planned | Semester VI |  |
-| Stochastic Processes | STAT GU4264 | 3 | planned | Semester VII |  |
 
 ## Core Curriculum — 37pt
 
@@ -79,10 +78,10 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester III | 18.5 |
 | Semester IV | 17.5 |
 | Semester V | 17.5 |
-| Semester VI | 17.5 |
-| Semester VII | 11 |
+| Semester VI | 14.5 |
+| Semester VII | 12 |
 | Semester VIII | 13 |
-| **Total** | **130** |
+| **Total** | **128** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
@@ -95,6 +94,7 @@ Kept as files so the decision stays on the record.
 - APMA E4200 — Partial Differential Equations
 - CHAP E4120 — Statistical Mechanics & Computational Methods
 - CHEM UN2408 — First Year Seminar in Chemical Research
+- CHEM UN3098 — Supervised Independent Research (third term)
 - COMS E4776 — Neural Networks & Deep Learning
 - COMS W1004 — Programming in Java
 - COMS W3134 — Data Structures in Java
@@ -111,3 +111,5 @@ Kept as files so the decision stays on the record.
 - PHYS UN1402 — Intro Elec/Magnetism & Optics
 - PHYS UN1403 — Intro to Classical & Quantum Waves
 - PHYS UN1494 — Intro to Experimental Physics-Lab
+- STAT GU4203 — Probability Theory
+- STAT GU4264 — Stochastic Processes

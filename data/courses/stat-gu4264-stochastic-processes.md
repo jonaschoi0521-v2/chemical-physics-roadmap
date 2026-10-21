@@ -1,11 +1,10 @@
 # STAT GU4264 — Stochastic Processes
 
-**Status:** planned
-**Semester:** Semester VII
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**
-**Order:** 5
 
 ---
 
@@ -37,6 +36,13 @@ recommended but not required.
 ---
 
 ## Log
+
+### 2026-10-20 - Waived
+Cut in favour of a second and third registered term of CHEM UN3098. A PhD application is
+read primarily on research rather than transcript depth, so the points were moved to the
+research itself. The probability and stochastic-calculus gap this reopens goes back to
+self-study - Monte Carlo, Markov state models and the SDE formulation of score-based
+generative models still have to be learned, just not for credit.
 
 ### 2026-10-20 — Added to the plan
 Added together with STAT GU4203 in place of the waived APMA E4200. Senior researchers

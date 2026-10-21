@@ -1,11 +1,10 @@
-# CHEM UN3098 — Supervised Independent Research
+# CHEM UN3098 — Supervised Independent Research (third term)
 
-**Status:** planned
-**Semester:** Semester VIII
-**Credits:** 3
+**Status:** waived
+**Semester:** —
+**Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
 
 ---
 
@@ -38,6 +37,17 @@ should begin sophomore year, uncredited or work-study, and is tracked in `../lab
 ---
 
 ## Log
+
+### 2026-10-20 - Waived
+Cut the Semester VI term. It had pushed VI to 18.5pt, which would have meant a second
+over-cap petition alongside Semester III, in a semester already carrying two labs plus
+Molecular Modeling. Research stays registered in Semesters VII and VIII; the uncredited
+lab work from sophomore year onward is unaffected and is tracked in `../lab/`.
+
+### 2026-10-20 - Became the first of three terms; moved to Semester VI at 4pt
+STAT GU4203 and GU4264 were waived and their points moved into research. UN3098 is
+variable-credit and repeatable, so it now runs VI-VII-VIII at 4+4+3 = 11 aggregate
+points, just under the 12 that would need department-representative approval.
 
 ### 2026-10-20 - Restored, moved to Semester VIII at 3pt
 Waived during the front-loading restructure, then restored: it is the only course where

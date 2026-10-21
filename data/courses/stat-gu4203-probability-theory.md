@@ -1,11 +1,10 @@
 # STAT GU4203 — Probability Theory
 
-**Status:** planned
-**Semester:** Semester VI
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**
-**Order:** 5
 
 ---
 
@@ -35,6 +34,13 @@ outright. A multivariate-calculus review is built into the course.
 ---
 
 ## Log
+
+### 2026-10-20 - Waived
+Cut in favour of a second and third registered term of CHEM UN3098. A PhD application is
+read primarily on research rather than transcript depth, so the points were moved to the
+research itself. The probability and stochastic-calculus gap this reopens goes back to
+self-study - Monte Carlo, Markov state models and the SDE formulation of score-based
+generative models still have to be learned, just not for credit.
 
 ### 2026-10-20 — Added to the plan
 Added to close the probability gap left when APMA E4200 (PDE) was waived. A classical PDE
