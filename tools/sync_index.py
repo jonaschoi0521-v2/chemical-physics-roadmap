@@ -29,7 +29,7 @@ SECTIONS = [
     ("Chemistry", lambda c: c["subject"] == "Chemistry"),
     ("Physics", lambda c: c["subject"] == "Physics"),
     ("Mathematics", lambda c: c["subject"] == "Mathematics"),
-    ("Builder Stack — CS & ML", lambda c: c["subject"] == "Programming"),
+    ("Computer Science", lambda c: c["subject"] == "Computer Science"),
     ("Core Curriculum", lambda c: c["subject"] == "Core Curriculum"),
 ]
 

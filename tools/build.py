@@ -94,20 +94,20 @@ def parse_order(raw: str) -> float:
 
 def classify_subject(title: str) -> str:
     code = title.split()[0].upper() if title else ""
-    if code in ("MATH", "APMA"):
+    if code in ("MATH", "APMA", "STAT"):
         return "Mathematics"
     elif code in ("CHEM", "CHAP"):
         return "Chemistry"
     elif code == "PHYS":
         return "Physics"
-    elif code in ("COMS", "ECBM", "STAT"):
-        return "Programming"
+    elif code in ("COMS", "ECBM"):
+        return "Computer Science"
     else:
         return "Core Curriculum"
 
 
 SUBJECT_ORDER = [
-    "Core Curriculum", "Chemistry", "Physics", "Mathematics", "Programming",
+    "Core Curriculum", "Chemistry", "Physics", "Mathematics", "Computer Science",
 ]
 
 

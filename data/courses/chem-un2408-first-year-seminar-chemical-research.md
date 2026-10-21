@@ -1,11 +1,10 @@
 # CHEM UN2408 — First Year Seminar in Chemical Research
 
-**Status:** planned
-**Semester:** Semester II
+**Status:** waived
+**Semester:** —
 **Credits:** 1
 **Fulfills:** Elective
 **Grade:**
-**Order:** 2
 
 ---
 

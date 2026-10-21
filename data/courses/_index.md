@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-09-11 — **do not edit by hand.**
+Last generated: 2026-10-20 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
@@ -8,25 +8,24 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 
 ---
 
-## Chemistry — 51.5pt
+## Chemistry — 49.5pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
 | Intensive General Chemistry Lab | CHEM UN1507 | 3 | planned | Semester I |  |
 | Intensive Organic Chemistry | CHEM UN2045 | 4 | planned | Semester II |  |
-| First Year Seminar in Chemical Research | CHEM UN2408 | 1 | planned | Semester II |  |
 | Intensive Organic Chemistry for 1st Year | CHEM UN2046 | 4 | planned | Semester III |  |
 | Physical Chemistry I | CHEM UN3079 | 4 | planned | Semester III |  |
-| Intensive Organic Chemistry Lab | CHEM UN2545 | 3 | planned | Semester IV |  |
+| Quantum Chemistry I | CHEM GU4221 | 3 | planned | Semester III |  |
 | Physical Chemistry II | CHEM UN3080 | 4 | planned | Semester IV |  |
+| Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester IV |  |
+| Intensive Organic Chemistry Lab | CHEM UN2545 | 3 | planned | Semester V |  |
 | Physical-Analytical Laboratory I | CHEM UN3085 | 4 | planned | Semester V |  |
-| Quantum Chemistry I | CHEM GU4221 | 3 | planned | Semester V |  |
 | Statistical Thermodynamics | CHEM GU4230 | 4.5 | planned | Semester V |  |
 | Physical-Analytical Laboratory II | CHEM UN3086 | 4 | planned | Semester VI |  |
-| Supervised Independent Research | CHEM UN3098 | 4 | planned | Semester VI |  |
 | Intro to Molecular Modeling | CHEM GU4232 | 4.5 | planned | Semester VI |  |
-| Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester VI |  |
 | Senior Seminar | CHEM UN3920 | 2 | planned | Semester VII |  |
+| Supervised Independent Research | CHEM UN3098 | 3 | planned | Semester VIII |  |
 
 ## Physics — 21.5pt
 
@@ -40,29 +39,30 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Electromagnetic Waves & Optics | PHYS UN3008 | 3 | planned | Semester VI |  |
 | Intermediate Laboratory Work | PHYS UN3081 | 2 | planned | Semester VII |  |
 
-## Mathematics — 19pt
+## Mathematics — 22pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
 | Accelerated Multivariable Calculus | MATH UN1205 | 4 | planned | Semester I |  |
-| Linear Algebra and Probability | MATH UN2015 | 3 | planned | Semester III |  |
-| Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester IV |  |
-| Partial Differential Equations | APMA E4200 | 3 | planned | Semester V |  |
-| Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester VII |  |
-| Methods in Computational Science | APMA E4302 | 3 | planned | Semester VIII |  |
+| Linear Algebra and Probability | MATH UN2015 | 3 | planned | Semester II |  |
+| Ordinary Differential Equations | MATH UN2030 | 3 | planned | Semester II |  |
+| Computational Mathematics: Numerical Methods | APMA E4300 | 3 | planned | Semester V |  |
+| Methods in Computational Science | APMA E4302 | 3 | planned | Semester VI |  |
+| Probability Theory | STAT GU4203 | 3 | planned | Semester VI |  |
+| Stochastic Processes | STAT GU4264 | 3 | planned | Semester VII |  |
 
-## Core Curriculum — 38pt
+## Core Curriculum — 37pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
 | University Writing | ENGL CC1010 | 3 | planned | Semester I |  |
 | Literature Humanities I | HUMA CC1001 | 4 | planned | Semester I |  |
 | Literature Humanities II | HUMA CC1002 | 4 | planned | Semester II |  |
-| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester II |  |
 | Contemporary Civilization I | COCI CC1101 | 4 | planned | Semester III |  |
 | Contemporary Civilization II | COCI CC1102 | 4 | planned | Semester IV |  |
+| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester IV |  |
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
-| Global Core I | — | 4 | planned | Semester VII |  |
+| Global Core I | — | 3 | planned | Semester VII |  |
 | Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
 | Art Humanities | HUMA UN1121 | 3 | planned | Semester VIII |  |
 | Physical Education II | PHED UN1002 | 1 | planned | Semester VIII |  |
@@ -75,12 +75,12 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester | Points |
 |---|---|
 | Semester I | 17.5 |
-| Semester II | 16.5 |
+| Semester II | 17.5 |
 | Semester III | 18.5 |
-| Semester IV | 17 |
+| Semester IV | 17.5 |
 | Semester V | 17.5 |
-| Semester VI | 18 |
-| Semester VII | 12 |
+| Semester VI | 17.5 |
+| Semester VII | 11 |
 | Semester VIII | 13 |
 | **Total** | **130** |
 
@@ -92,7 +92,9 @@ Columbia College caps registration at **18 points** per term; above that needs a
 
 Kept as files so the decision stays on the record.
 
+- APMA E4200 — Partial Differential Equations
 - CHAP E4120 — Statistical Mechanics & Computational Methods
+- CHEM UN2408 — First Year Seminar in Chemical Research
 - COMS E4776 — Neural Networks & Deep Learning
 - COMS W1004 — Programming in Java
 - COMS W3134 — Data Structures in Java

@@ -2,10 +2,9 @@
 
 **Status:** planned
 **Semester:** Semester VII
-**Credits:** 4
+**Credits:** 3
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 5
 
 ---
 

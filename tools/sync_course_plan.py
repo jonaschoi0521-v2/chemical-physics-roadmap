@@ -30,10 +30,9 @@ KEEP_FROM = "## Self-Study"
 TYPE_BY_FULFILLS = {
     "Core Curriculum": "Core",
     "Chemical Physics Major": "Major",
-    "Builder Stack": "Builder",
     "Elective": "Elective",
 }
-TYPE_ORDER = ["Core", "Major", "Builder", "Elective"]
+TYPE_ORDER = ["Core", "Major", "Elective"]
 
 
 def pts(value: str | float) -> str:
@@ -54,7 +53,7 @@ def render(courses: list[dict]) -> str:
         rows += [(kind, c) for c in group]
 
     width = max((len(c["name"]) for _, c in rows), default=6)
-    lines = ["# Course Plan — Chemical Physics + Builder", ""]
+    lines = ["# Course Plan — Chemical Physics", ""]
     lines.append(f"| #  | {'Course'.ljust(width)} | Code        | Points | Type    |")
     lines.append(f"| -- | {'-' * width} | ----------- | ------ | ------- |")
     for i, (kind, c) in enumerate(rows, 1):

@@ -3,7 +3,7 @@
 **Status:** waived
 **Semester:** —
 **Credits:** 3
-**Fulfills:** Builder Stack
+**Fulfills:** Elective
 **Grade:**
 
 ---

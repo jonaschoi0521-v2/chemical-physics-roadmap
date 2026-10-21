@@ -1,11 +1,10 @@
 # APMA E4200 — Partial Differential Equations
 
-**Status:** planned
-**Semester:** Semester V
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
 
 ---
 

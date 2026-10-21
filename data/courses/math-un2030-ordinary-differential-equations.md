@@ -1,7 +1,7 @@
 # MATH UN2030 — Ordinary Differential Equations
 
 **Status:** planned
-**Semester:** Semester IV
+**Semester:** Semester II
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

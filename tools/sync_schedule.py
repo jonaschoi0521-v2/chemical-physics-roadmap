@@ -33,7 +33,7 @@ def pts(value: str) -> str:
 
 
 def render(blocks: list[dict]) -> str:
-    lines = ["# Semester Schedule — Chemical Physics + Builder", ""]
+    lines = ["# Semester Schedule — Chemical Physics", ""]
     for block in blocks:
         n = ARABIC[block["label"]]
         lines += [f"## Semester {n} — {pts(block['total'])}", ""]

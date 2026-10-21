@@ -1,7 +1,7 @@
 # APMA E4300 — Computational Mathematics: Numerical Methods
 
 **Status:** planned
-**Semester:** Semester VII
+**Semester:** Semester V
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**

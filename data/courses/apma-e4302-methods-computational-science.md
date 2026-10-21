@@ -1,7 +1,7 @@
 # APMA E4302 — Methods in Computational Science
 
 **Status:** planned
-**Semester:** Semester VIII
+**Semester:** Semester VI
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**
