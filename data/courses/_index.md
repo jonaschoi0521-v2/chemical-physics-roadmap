@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-10-20 — **do not edit by hand.**
+Last generated: 2026-11-06 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
@@ -8,7 +8,7 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 
 ---
 
-## Chemistry — 55pt
+## Chemistry — 58pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
@@ -17,15 +17,16 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Intensive Organic Chemistry for 1st Year | CHEM UN2046 | 4 | planned | Semester III |  |
 | Physical Chemistry I | CHEM UN3079 | 4 | planned | Semester III |  |
 | Quantum Chemistry I | CHEM GU4221 | 4.5 | planned | Semester III |  |
+| Statistical Mechanics & Computational Methods | CHAP E4120 | 3 | planned | Semester IV |  |
 | Physical Chemistry II | CHEM UN3080 | 4 | planned | Semester IV |  |
-| Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester IV |  |
 | Intensive Organic Chemistry Lab | CHEM UN2545 | 3 | planned | Semester V |  |
 | Physical-Analytical Laboratory I | CHEM UN3085 | 4 | planned | Semester V |  |
 | Statistical Thermodynamics | CHEM GU4230 | 4.5 | planned | Semester V |  |
 | Physical-Analytical Laboratory II | CHEM UN3086 | 4 | planned | Semester VI |  |
 | Intro to Molecular Modeling | CHEM GU4232 | 4.5 | planned | Semester VI |  |
-| Senior Seminar | CHEM UN3920 | 2 | planned | Semester VII |  |
+| Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester VI |  |
 | Supervised Independent Research I | CHEM UN3098 | 4 | planned | Semester VII |  |
+| Senior Seminar | CHEM UN3920 | 2 | planned | Semester VII |  |
 | Supervised Independent Research II | CHEM UN3098 | 3 | planned | Semester VIII |  |
 
 ## Physics — 21.5pt
@@ -62,8 +63,8 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Contemporary Civilization II | COCI CC1102 | 4 | planned | Semester IV |  |
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
 | Global Core I | — | 3 | planned | Semester VII |  |
-| Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
 | Art Humanities | HUMA UN1121 | 3 | planned | Semester VIII |  |
+| Music Humanities | HUMA UN1123 | 3 | planned | Semester VIII |  |
 | Physical Education II | PHED UN1002 | 1 | planned | Semester VIII |  |
 | Global Core II | — | 3 | planned | Semester VIII |  |
 
@@ -76,12 +77,12 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester I | 17.5 |
 | Semester II | 18.5 |
 | Semester III | 20 |
-| Semester IV | 16.5 |
+| Semester IV | 17 |
 | Semester V | 17.5 |
-| Semester VI | 14.5 |
+| Semester VI | 17 |
 | Semester VII | 12 |
 | Semester VIII | 13 |
-| **Total** | **129.5** |
+| **Total** | **132.5** |
 
 Columbia College caps registration at **18 points** per term; above that needs a petition.
 
@@ -92,7 +93,6 @@ Columbia College caps registration at **18 points** per term; above that needs a
 Kept as files so the decision stays on the record.
 
 - APMA E4200 — Partial Differential Equations
-- CHAP E4120 — Statistical Mechanics & Computational Methods
 - CHEM UN2408 — First Year Seminar in Chemical Research
 - CHEM UN3098 — Supervised Independent Research (third term)
 - COMS E4776 — Neural Networks & Deep Learning

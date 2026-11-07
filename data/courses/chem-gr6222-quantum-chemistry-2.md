@@ -1,11 +1,11 @@
 # CHEM GR6222 — Quantum Chemistry II
 
 **Status:** planned
-**Semester:** Semester IV
+**Semester:** Semester VI
 **Credits:** 2.5
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 2
+**Order:** 4
 
 ---
 
@@ -16,12 +16,23 @@ Mechanics II. Carries the electronic-structure foundation forward into post-Hart
 and correlation methods — the machinery underneath the quantum-chemistry codes used in
 computational drug discovery.
 
+Offered **spring of odd years only**, which fixes it to Spring 2029 (Sem VI) rather
+than the spring right after GU4221. The gap is forced by the offering pattern, not
+chosen: GU4221 lands Fall 2027, so the next available GR6222 is three semesters later.
+Two things follow. The Szabo self-study carries the continuity across that gap, and
+CHEM GU4230 (Sem V) plus CHEM GU4232 (Sem VI) sit in between, so the electronic-structure
+thread stays alive the whole time.
+
 Open items to confirm with the DUS / bulletin: that this graduate course counts toward
 the undergraduate Chemical Physics major, and that GU4221 is the only prerequisite.
 
 ---
 
 ## Log
+
+### 2026-11-06 — Moved to Semester VI
+Offered spring of odd years only, so Spring 2028 (Sem IV) was never available. Moved to
+Spring 2029. CHAP E4120 takes the vacated Sem IV slot.
 
 ### 2026-09-05 — Restored to the plan
 Rolled back from the physics equivalent: the physics quantum sequence needs advanced
