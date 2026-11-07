@@ -1,7 +1,7 @@
 # APMA E4300 — Computational Mathematics: Numerical Methods
 
 **Status:** planned
-**Semester:** Semester V
+**Semester:** Semester IV
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**
@@ -24,12 +24,23 @@ account of how any of them is actually computed.
 It also repairs the implementation gap left by cutting the COMS track — but in applied
 mathematics, on this field's own problems, rather than in a teaching language.
 
-**Logistics:** 3pt. Offered most terms, usually fall. Programming in Python. Placed in
-Semester VII because APMA E4302 requires it as a prerequisite.
+**Logistics:** 3pt. Offered most terms, **usually fall** — confirm it runs in Spring 2028
+before counting on Semester IV. Programming in Python.
+
+Placed in Semester IV: MATH UN2010 (linear algebra) is done in Semester II and MATH UN2030
+(ODEs) runs in the same term, so the prerequisites are met at their earliest point. Taking
+it here also puts numerical linear algebra in hand while the quantum sequence is still
+live — electronic structure is an eigenvalue problem, and Semester IV is when that stops
+being an abstraction.
 
 ---
 
 ## Log
+
+### 2026-11-06 — Moved to Semester IV
+Moved from Semester V into the slot CHEM GR6222 and COCI CC1102 vacated. Prerequisites are
+satisfied at their earliest point, and APMA E4302 (now Semester VIII) still gets it well in
+advance. Verify the spring offering — this course usually runs in the fall.
 
 ### 2026-09-05 — Added to the plan
 Added with APMA E4302 in place of COMS W3203, after a search for scientific-computing

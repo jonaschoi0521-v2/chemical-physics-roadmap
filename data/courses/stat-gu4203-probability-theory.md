@@ -10,8 +10,10 @@
 
 ## Why This Course Matters
 
-The probability half of MATH UN2015 is a fraction of a 3pt course shared with linear
-algebra. Everything computational in this roadmap runs on probability at full strength:
+**Dropping MATH UN2015 on 2026-11-06 removed the last probability in the plan.** UN2015
+split 3pt between linear algebra and probability; UN2010 replaced it with full-strength
+linear algebra and no probability at all. So this course no longer upgrades thin coverage,
+it supplies the only coverage. Everything computational in this roadmap runs on it:
 
 - **Monte Carlo** — the workhorse of statistical mechanics and the method under every
   free-energy calculation. Importance sampling, detailed balance, estimator variance.
@@ -34,6 +36,9 @@ outright. A multivariate-calculus review is built into the course.
 ---
 
 ## Log
+
+### 2026-11-06 — Staged into Semester VIII
+Un-waived. Dropping MATH UN2015 left the plan with no probability at all, and this is also the hard prerequisite for STAT GU4264. Needed ahead of COMS W4771, which is a statistics course wearing an ML name.
 
 ### 2026-10-20 - Waived
 Cut in favour of a second and third registered term of CHEM UN3098. A PhD application is

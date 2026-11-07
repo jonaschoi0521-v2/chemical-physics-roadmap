@@ -1,7 +1,7 @@
 # CHAP E4120 — Statistical Mechanics & Computational Methods
 
 **Status:** planned
-**Semester:** Semester IV
+**Semester:** Semester VII
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**

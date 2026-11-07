@@ -1,11 +1,10 @@
 # CHEM UN3098 — Supervised Independent Research I
 
-**Status:** planned
-**Semester:** Semester VII
+**Status:** waived
+**Semester:** —
 **Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 1
 
 ---
 

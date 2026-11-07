@@ -50,5 +50,5 @@ Replaces MATH UN1202 (Calculus IV, 3pt) after the chemistry DUS approved the sub
 
 ## Connections
 
-Opens the math chain — here → MATH UN2015 → UN2030 → APMA E4200. The vector calculus
+Opens the math chain — here → MATH UN2010 → UN2030 → APMA E4200. The vector calculus
 half feeds PHYS UN3007/UN3008 (E&M, electromagnetic waves) directly.

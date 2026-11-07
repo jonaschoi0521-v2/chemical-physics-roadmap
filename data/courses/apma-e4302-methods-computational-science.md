@@ -34,6 +34,15 @@ this is a bounded target with a fixed deadline: enough C to survive one course.
 
 ## Log
 
+### 2026-11-06 — Staged into Semester VIII
+Un-waived. Decided after first arguing against it: the objection was that Python competence is what the work needs and compiled-language HPC is a different skill, which is true of the content, but the course is the only one in four years that treats building and running scientific software as a subject. Prerequisite C or Fortran still has to come from self-study.
+
+### 2026-11-06 — Moved to Semester VIII
+Moved out of Semester VI to keep that term at the 18pt cap once COCI CC1102 arrived there.
+Semester VIII is also the better placement on its own merits: the course needs self-taught
+C or Fortran, which this buys two more years to acquire, and senior spring is clear of PhD
+applications. The file's own prose already assumed Semester VIII.
+
 ### 2026-09-05 — Added to the plan
 Added with APMA E4300 in place of COMS W3203. Chosen over APMA E4301 (numerical PDE):
 mathematical depth is already abundant here; the ability to ship is not.

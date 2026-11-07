@@ -38,9 +38,11 @@ dedicated entirely to preparing for this course. Three targets:
 - **The quantum half of physical chemistry** - that is UN3080's material, not UN3079's.
   UN3079 (thermodynamics and kinetics) sits concurrently in Semester III but is the wrong
   half for this prerequisite; UN3080 does not arrive until Semester IV, after.
-- **Linear algebra past MATH UN2015**, which splits 3pt with probability. Specific targets:
-  Hermitian operators, eigenvalue problems, orthonormal bases and completeness, change of
-  basis, the spectral theorem, commutators.
+- **Linear algebra in its quantum framing.** MATH UN2010 (Semester II) now delivers
+  eigenvalue problems, change of basis, orthonormal bases and the spectral theorem
+  directly, so this target shrank when UN2015 was dropped on 2026-11-06. What the math
+  course will not give is the physics framing: Hermitian operators on function spaces,
+  completeness as a resolution of the identity, and commutators.
 - **Quantum mechanics from Friesner's own course materials.**
 
 Note that PHYS UN2601 (Classical & Quantum Waves) is also concurrent, so this is the first

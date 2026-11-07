@@ -1,11 +1,11 @@
 # CHEM UN3086 — Physical-Analytical Laboratory II
 
 **Status:** planned
-**Semester:** Semester VI
+**Semester:** Semester VIII
 **Credits:** 4
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 2
+**Order:** 1
 
 ---
 

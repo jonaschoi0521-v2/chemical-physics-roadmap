@@ -1,10 +1,11 @@
 # APMA E4200 — Partial Differential Equations
 
-**Status:** waived
-**Semester:** —
+**Status:** planned
+**Semester:** Semester V
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
+**Order:** 1
 
 ---
 
@@ -26,7 +27,7 @@ quantum mechanics does not actually depend on this course):
 
 Taken as **APMA E4200** rather than MATH UN3028: same subject, same 3 points, fall term,
 and the applied-math treatment sits closer to the numerical side of the material. Filed
-under Mathematics, with MATH UN2015 and UN2030.
+under Mathematics, with MATH UN2010 and UN2030.
 
 **Logistics** (from the most recent listing): Mo/We 10:10–11:25am, 633 Seeley W. Mudd,
 in person, 3pt, standard grading. Fall term — matches Semester V.
@@ -34,6 +35,9 @@ in person, 3pt, standard grading. Fall term — matches Semester V.
 ---
 
 ## Log
+
+### 2026-11-06 — Staged into Semester VIII
+Un-waived. Poisson-Boltzmann and continuum solvation, Fokker-Planck and Smoluchowski, and the SDE language of score-based generative models. Reasoning already on file.
 
 ### 2026-09-05 — Added to the plan
 Replaces MATH UN3028. Kept after weighing whether PDEs were essential: they are, though
@@ -51,5 +55,5 @@ second-tier behind quantum mechanics and statistical mechanics.
 
 ## Connections
 
-Completes the math chain — MATH UN1205 → UN2015 → UN2030 → here. Underpins
+Completes the math chain — MATH UN1205 → UN2010 → UN2030 → here. Underpins
 solvation and kinetics in CHEM GU4230 and the modelling work in CHEM GU4232.

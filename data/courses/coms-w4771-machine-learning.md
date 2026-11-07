@@ -14,6 +14,9 @@
 
 ## Log
 
+### 2026-11-06 — Staged into Semester VIII
+Un-waived, reversing the 2026-09-05 cut. The statistical foundation — bias-variance, regularization, generalization, optimization — is what separates understanding why an architecture works from running it. Covers supervised ML only: GNNs, generative models and equivariance are not in it.
+
 ### 2026-09-05 — Dropped from the plan
 Cut. ML theory is the most self-teachable thing on this schedule and is better learned
 inside research than from a syllabus. The undergraduate years are being spent on the

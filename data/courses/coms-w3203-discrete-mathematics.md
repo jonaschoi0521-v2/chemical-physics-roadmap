@@ -15,7 +15,7 @@ CS number: proof technique, combinatorics, and graph theory. Graphs are the lite
 substrate of every graph neural network in molecular ML, and proof fluency is the kind of
 thing that is genuinely hard to acquire alone — unlike ML theory, which is not.
 
-It belongs with MATH UN2015 / UN2030 / UN3028 in the foundations, not with the programming
+It belongs with MATH UN2010 / UN2030 / UN3028 in the foundations, not with the programming
 courses it was originally grouped beside.
 
 ---

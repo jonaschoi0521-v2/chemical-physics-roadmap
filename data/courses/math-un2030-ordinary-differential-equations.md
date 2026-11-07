@@ -5,7 +5,7 @@
 **Credits:** 3
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 5
+**Order:** 3
 
 ---
 
@@ -23,7 +23,7 @@ Quantum Chemistry I in Semester III, for three reasons:
   It is not a special-functions or Sturm-Liouville course, so the overlap with quantum
   chemistry is thinner than the name suggests.
 - GU4221's content - perturbation theory, angular momentum and spin, spin-spin interactions
-  - is dominated by linear algebra, not ODEs. MATH UN2015 stays in Semester II for exactly
+  - is dominated by linear algebra, not ODEs. MATH UN2010 stays in Semester II for exactly
   that reason.
 
 Semester IV placement is still ahead of everything that needs it: **APMA E4300** (Semester V)

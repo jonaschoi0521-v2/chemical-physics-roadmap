@@ -5,7 +5,7 @@
 **Credits:** 4.5
 **Fulfills:** Chemical Physics Major
 **Grade:**
-**Order:** 4
+**Order:** 3
 
 ---
 
@@ -39,6 +39,23 @@ in person, 4.5pt, standard grading. Fall term — matches Semester VII.
 ---
 
 ## Log
+
+### 2026-11-07 — Restored to Semester V
+Un-waived, resolving the open risk logged on 2026-11-06: this course is a confirmed
+Chemical Physics major requirement and CHAP E4120 is not. Both now run in Semester V —
+they are not redundant. GU4230 is the chemistry-department statistical thermodynamics
+course and carries the depth and the major credit; E4120 carries the Monte Carlo and
+molecular dynamics that GU4230 does not. Together they are the statistical-mechanics
+foundation the plan was missing, which also lowers the cost of leaving STAT GU4203 out.
+
+### 2026-11-06 — Dropped from the plan
+Cut in favour of CHAP E4120 (Sem IV), reversing the 2026-09-05 decision. E4120 carries
+Monte Carlo and molecular dynamics, which this course does not, and the simulation craft
+is the part that feeds research. Frees 4.5pt in Semester V.
+
+Open risk, unresolved: this course is confirmed as a Chemical Physics major requirement
+and E4120 is not. Confirm with the DUS that E4120 counts toward the major before relying
+on this trade. If it counts only as a free elective, restore this course.
 
 ### 2026-09-05 — Added to the plan
 Replaces CHAP E4120 (Statistical Mechanics & Computational Methods, 3pt).
