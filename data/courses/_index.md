@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-11-07 — **do not edit by hand.**
+Last generated: 2026-11-10 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
@@ -17,12 +17,12 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Intensive Organic Chemistry for 1st Year | CHEM UN2046 | 4 | planned | Semester III |  |
 | Physical Chemistry I | CHEM UN3079 | 4 | planned | Semester III |  |
 | Quantum Chemistry I | CHEM GU4221 | 4.5 | planned | Semester III |  |
+| Statistical Mechanics & Computational Methods | CHAP E4120 | 3 | planned | Semester IV |  |
 | Physical Chemistry II | CHEM UN3080 | 4 | planned | Semester IV |  |
 | Intensive Organic Chemistry Lab | CHEM UN2545 | 3 | planned | Semester V |  |
 | Statistical Thermodynamics | CHEM GU4230 | 4.5 | planned | Semester V |  |
 | Intro to Molecular Modeling | CHEM GU4232 | 4.5 | planned | Semester VI |  |
 | Quantum Chemistry II | CHEM GR6222 | 2.5 | planned | Semester VI |  |
-| Statistical Mechanics & Computational Methods | CHAP E4120 | 3 | planned | Semester VII |  |
 | Physical-Analytical Laboratory I | CHEM UN3085 | 4 | planned | Semester VII |  |
 | Senior Seminar | CHEM UN3920 | 2 | planned | Semester VII |  |
 | Physical-Analytical Laboratory II | CHEM UN3086 | 4 | planned | Semester VIII |  |
@@ -50,20 +50,15 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Partial Differential Equations | APMA E4200 | 3 | planned | Semester V |  |
 | Methods in Computational Science | APMA E4302 | 3 | planned | Semester VI |  |
 
-## Computer Science — 3pt
-
-| Course | Code | Credits | Status | Semester | Grade |
-|---|---|---|---|---|---|
-| Intermediate Computing in Python | COMS W2132 | 3 | planned | Semester II |  |
-
-## Core Curriculum — 37pt
+## Core Curriculum — 40pt
 
 | Course | Code | Credits | Status | Semester | Grade |
 |---|---|---|---|---|---|
 | University Writing | ENGL CC1010 | 3 | planned | Semester I |  |
 | Literature Humanities I | HUMA CC1001 | 4 | planned | Semester I |  |
 | Literature Humanities II | HUMA CC1002 | 4 | planned | Semester II |  |
-| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester IV |  |
+| Frontiers of Science | SCNC CC1000 | 4 | planned | Semester II |  |
+| Intro to Computing for Engineers & Applied Scientists | ENGI E1006 | 3 | planned | Semester III |  |
 | Contemporary Civilization I | COCI CC1101 | 4 | planned | Semester V |  |
 | Contemporary Civilization II | COCI CC1102 | 4 | planned | Semester VI |  |
 | Physical Education I | PHED UN1001 | 1 | planned | Semester VII |  |
@@ -80,12 +75,12 @@ Sequence B), with a self-directed CS/ML stack alongside it.
 | Semester | Points |
 |---|---|
 | Semester I | 17.5 |
-| Semester II | 17.5 |
-| Semester III | 16 |
-| Semester IV | 17 |
+| Semester II | 18.5 |
+| Semester III | 19 |
+| Semester IV | 16 |
 | Semester V | 17.5 |
 | Semester VI | 17 |
-| Semester VII | 15 |
+| Semester VII | 12 |
 | Semester VIII | 14 |
 | **Total** | **131.5** |
 
@@ -103,6 +98,7 @@ Kept as files so the decision stays on the record.
 - CHEM UN3098 — Supervised Independent Research (third term)
 - COMS E4776 — Neural Networks & Deep Learning
 - COMS W1004 — Programming in Java
+- COMS W2132 — Intermediate Computing in Python
 - COMS W3134 — Data Structures in Java
 - COMS W3203 — Discrete Mathematics
 - COMS W4771 — Machine Learning

@@ -1,11 +1,11 @@
 # SCNC CC1000 — Frontiers of Science
 
 **Status:** planned
-**Semester:** Semester IV
+**Semester:** Semester II
 **Credits:** 4
 **Fulfills:** Core Curriculum
 **Grade:**
-**Order:** 4
+**Order:** 5
 
 ---
 

@@ -1,11 +1,10 @@
 # COMS W2132 — Intermediate Computing in Python
 
-**Status:** planned
-**Semester:** Semester II
+**Status:** waived
+**Semester:** —
 **Credits:** 3
 **Fulfills:** Elective
 **Grade:**
-**Order:** 2
 
 ---
 
@@ -31,6 +30,12 @@ course.
 ---
 
 ## Log
+
+### 2026-11-10 — Dropped from the plan
+Replaced by ENGI E1006. W2132 is **spring-only** — verified against the registrar: offered
+Spring 2027, not offered Fall 2025 or Fall 2026 — so it could not sit in Semester III. It
+was the better course on content, being intermediate rather than introductory, and that is
+the real cost of needing a fall offering.
 
 ### 2026-11-06 — Staged into Semester VIII
 Added. The Python-native replacement for COMS W1004 and W3134, the two Java courses cut on 2026-09-05 — one course instead of two, in the language the work is actually written in. Data structures and algorithms in Python plus practical software development. Takes the first ML slot because everything else rests on it.
