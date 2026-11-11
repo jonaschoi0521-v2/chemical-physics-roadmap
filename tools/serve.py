@@ -11,6 +11,7 @@ Endpoints (localhost only):
     POST /api/reorder  -> apply a new course arrangement
     POST /api/remove   -> take a course off the schedule (waives it, keeps the file)
     POST /api/add      -> scaffold a new course into a semester
+    POST /api/ap-reorder -> rearrange the Applied Physics semester-plan markdown
 """
 
 from __future__ import annotations
@@ -32,6 +33,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = ROOT / "site"
 COURSE_DIR = ROOT / "data" / "courses"
+AP_PLAN = ROOT / "data" / "requirement" / "applied-physics-semester-plan.md"
+AP_BACKUPS = ROOT / "private" / "ap-plan-backups"
 START_PORT = 8000
 
 VALID_SEMESTERS = {
@@ -182,6 +185,153 @@ def rebuild() -> None:
                        capture_output=True)
 
 
+# ── Applied Physics plan writing ─────────────────────────────────────────────
+# The Registration II page has no course files behind it; its source of truth is
+# the semester-plan markdown, so a drop rewrites that file's tables in place.
+
+AP_ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]
+_AP_HEADER = re.compile(r"^##\s+Semester\s+(\d)\s+—\s+(.+?)\s*$", re.M)
+
+
+def _ap_parse() -> tuple[str, list[dict], str]:
+    """Split the plan into (preamble, semester blocks, tail after the last table)."""
+    text = AP_PLAN.read_text(encoding="utf-8")
+    heads = list(_AP_HEADER.finditer(text))
+    if not heads:
+        raise ValueError("no semester sections found in the plan")
+
+    preamble = text[:heads[0].start()]
+    blocks = []
+    rid = 0
+    for i, m in enumerate(heads):
+        end = heads[i + 1].start() if i + 1 < len(heads) else len(text)
+        body = text[m.end():end]
+        cut = body.find("\n## ")
+        if cut != -1:
+            body = body[:cut]
+        rows, notes = [], []
+        for line in body.splitlines():
+            t = line.strip()
+            if t.startswith("|"):
+                cells = [c.strip() for c in t.strip("|").split("|")]
+                if len(cells) < 3:
+                    continue
+                code, name, pts = cells[0], cells[1], cells[2]
+                if code == "Code" and pts == "Pts":
+                    continue
+                if set(code) <= set("- :") and set(pts) <= set("- :"):
+                    continue
+                if not code and not name:          # total row
+                    continue
+                rid += 1
+                rows.append((f"r{rid}", code, name, pts))
+            elif t and not t.startswith("#"):
+                notes.append(t)
+        blocks.append({"num": int(m.group(1)), "season": m.group(2).strip(),
+                       "rows": rows, "notes": notes})
+
+    # Everything from "## Total" onward is regenerated except the prose sections.
+    tail_m = re.search(r"^##\s+Sequencing this plan respects\s*$", text, re.M)
+    tail = text[tail_m.start():] if tail_m else ""
+    return preamble, blocks, tail
+
+
+def _ap_pts(raw: str) -> float:
+    try:
+        return float(raw)
+    except ValueError:
+        return 0.0
+
+
+def _ap_fmt(value: float) -> str:
+    return f"{value:g}"
+
+
+def _ap_backup() -> None:
+    """Snapshot the plan before every rewrite. private/ is gitignored and local."""
+    if not AP_PLAN.exists():
+        return
+    AP_BACKUPS.mkdir(parents=True, exist_ok=True)
+    from datetime import datetime
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    (AP_BACKUPS / f"{stamp}.md").write_text(
+        AP_PLAN.read_text(encoding="utf-8"), encoding="utf-8")
+    # Keep the most recent 200 snapshots.
+    snaps = sorted(AP_BACKUPS.glob("*.md"))
+    for old_snap in snaps[:-200]:
+        old_snap.unlink()
+
+
+def _ap_write(preamble: str, blocks: list[dict], tail: str) -> None:
+    _ap_backup()
+    out = [preamble.rstrip("\n"), ""]
+    for b in blocks:
+        total = sum(_ap_pts(r[3]) for r in b["rows"])
+        out.append(f"## Semester {b['num']} — {b['season']}")
+        out.append("")
+        out.append("| Code | Title | Pts |")
+        out.append("|---|---|---|")
+        for _, code, name, pts in b["rows"]:
+            out.append(f"| {code} | {name} | {pts} |")
+        out.append(f"| | | **{_ap_fmt(total)}** |")
+        out.append("")
+        if b["notes"]:
+            out.append(" ".join(b["notes"]))
+            out.append("")
+
+    grand = sum(sum(_ap_pts(r[3]) for r in b["rows"]) for b in blocks)
+    out.append("## Total")
+    out.append("")
+    out.append("| Semester | Pts |")
+    out.append("|---|---|")
+    for b in blocks:
+        total = sum(_ap_pts(r[3]) for r in b["rows"])
+        out.append(f"| {b['num']} — {b['season']} | {_ap_fmt(total)} |")
+    out.append(f"| **Sum** | **{_ap_fmt(grand)}** |")
+    out.append("")
+    if tail:
+        out.append(tail.rstrip("\n"))
+        out.append("")
+    AP_PLAN.write_text("\n".join(out), encoding="utf-8")
+
+
+def apply_ap_reorder(semesters: list[dict]) -> list[str]:
+    """Rearrange the plan so each named semester holds exactly the codes given."""
+    preamble, blocks, tail = _ap_parse()
+    by_num = {b["num"]: b for b in blocks}
+
+    registry = {}
+    for b in blocks:
+        for row in b["rows"]:
+            registry[row[0]] = row          # keyed by row id: codes repeat
+
+    changed = []
+    for entry in semesters:
+        label = (entry.get("semester") or "").strip()
+        if label not in VALID_SEMESTERS:
+            raise ValueError(f"unknown semester {label!r}")
+        num = AP_ROMAN.index(label.split()[1]) + 1
+        ids = entry.get("rids", [])
+        rows = []
+        for rid in ids:
+            if rid not in registry:
+                raise ValueError(f"unknown row {rid!r}")
+            rows.append(registry[rid])
+        by_num[num]["rows"] = rows
+        changed.append(label)
+
+    # Drop any course that moved out of a semester not named in this request.
+    moved = {r for e in semesters for r in e.get("rids", [])}
+    touched = {AP_ROMAN.index(e["semester"].split()[1]) + 1 for e in semesters}
+    for b in blocks:
+        if b["num"] in touched:
+            continue
+        b["rows"] = [r for r in b["rows"] if r[0] not in moved]
+
+    _ap_write(preamble, blocks, tail)
+    return changed
+
+
 # ── Server ───────────────────────────────────────────────────────────────────
 
 class EditHandler(http.server.SimpleHTTPRequestHandler):
@@ -206,13 +356,17 @@ class EditHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_POST(self) -> None:
         route = self.path.split("?")[0]
-        if route not in ("/api/reorder", "/api/remove", "/api/add"):
+        if route not in ("/api/reorder", "/api/remove", "/api/add",
+                         "/api/ap-reorder"):
             self.send_error(404, "No such endpoint")
             return
         try:
             length = int(self.headers.get("Content-Length") or 0)
             payload = json.loads(self.rfile.read(length) or b"{}")
-            if route == "/api/reorder":
+            if route == "/api/ap-reorder":
+                changed = apply_ap_reorder(payload.get("semesters", []))
+                verb = "AP reordered"
+            elif route == "/api/reorder":
                 changed = apply_reorder(payload.get("semesters", []))
                 verb = "reordered"
             elif route == "/api/remove":

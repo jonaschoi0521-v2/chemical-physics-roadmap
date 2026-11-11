@@ -156,6 +156,79 @@ def build_registration(courses: list[dict]) -> list[dict]:
     return blocks
 
 
+# ── Applied Physics registration (parsed from the semester-plan markdown) ─────
+
+AP_PLAN_FILE = DATA_DIR / "requirement" / "applied-physics-semester-plan.md"
+
+_ROMAN = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V",
+          6: "VI", 7: "VII", 8: "VIII"}
+
+_AP_SEM_RE = re.compile(r"^##\s+Semester\s+(\d)\s+—\s+(.+?)\s*$", re.MULTILINE)
+
+
+def build_ap_registration() -> list[dict]:
+    """Parse the Applied Physics semester plan into registration blocks.
+
+    Source of truth is the markdown file, not data/courses/ — this plan is a
+    hypothetical major change, so it deliberately does not touch the real
+    course files behind the Chemical Physics page.
+    """
+    if not AP_PLAN_FILE.exists():
+        return []
+
+    text = AP_PLAN_FILE.read_text(encoding="utf-8")
+    matches = list(_AP_SEM_RE.finditer(text))
+    blocks = []
+    rid = 0
+
+    for i, m in enumerate(matches):
+        num = int(m.group(1))
+        season = m.group(2).strip()
+        note = ""
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        body = text[m.end():end]
+        cut = body.find("\n## ")
+        if cut != -1:
+            body = body[:cut]
+
+        rows, total = [], "0.00"
+        for line in body.splitlines():
+            line = line.strip()
+            if not line.startswith("|"):
+                # Prose under a semester table becomes that semester's note.
+                if line and not line.startswith("#") and rows:
+                    note = (note + " " + line).strip()
+                continue
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            if len(cells) < 3:
+                continue
+            code, name, pts = cells[0], cells[1], cells[2]
+            if set(code) <= set("- :") and set(pts) <= set("- :"):
+                continue                      # separator row
+            if code == "Code" and pts == "Pts":
+                continue                      # header row
+            if not code and not name:         # the bolded total row
+                total = f"{float(pts.strip('*') or 0):.2f}"
+                continue
+            try:
+                credits = f"{float(pts):.2f}"
+            except ValueError:
+                credits = pts
+            rid += 1
+            rows.append({"rid": f"r{rid}", "code": code,
+                         "name": name, "credits": credits})
+
+        blocks.append({
+            "label": f"Semester {_ROMAN.get(num, num)}",
+            "season": season,
+            "rows": rows,
+            "total": total,
+            "note": note,
+        })
+
+    return blocks
+
+
 # ── Data loaders ─────────────────────────────────────────────────────────────
 
 def load_courses() -> list[dict]:
@@ -433,6 +506,7 @@ def main() -> int:
     )
 
     courses = load_courses()
+    ap_registration = build_ap_registration()
     projects = load_projects()
     researchers = load_researchers()
     internships = load_internships()
@@ -464,6 +538,10 @@ def main() -> int:
         }),
         ("registration.html", "registration.html", {
             "registration": build_registration(courses),
+        }),
+        ("registration2.html", "registration2.html", {
+            "registration": ap_registration,
+            "ap_total": f"{sum(float(b['total']) for b in ap_registration):.2f}",
         }),
         ("projects.html", "projects.html", {"projects": projects}),
         ("professors.html", "professors.html", {"professors": PROFESSORS}),
