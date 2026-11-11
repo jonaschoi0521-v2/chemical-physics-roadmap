@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration II — Jonas Choi</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script>
+    // Runs before paint so a night-mode viewer never sees a flash of the light theme.
+    // No stored choice means no attribute, which leaves the OS preference in charge.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="row">
+        <div>
+          <a class="title" href="index.html">Chemical Physics Roadmap</a>
+          <span class="subtitle">Columbia College · Chemical Physics</span>
+        </div>
+        <nav>
+          <a href="index.html" >About</a>
+          <a href="dashboard.html" >Dashboard</a>
+          <a href="courses.html" >Courses</a>
+          <a href="registration.html" >Registration</a>
+          <a href="registration2.html" class="active">Registration II</a>
+          <a href="projects.html" >Projects</a>
+          <a href="professors.html" >Professors</a>
+          <a href="research.html" >Research</a>
+          <a href="internships.html" >Opportunities</a>
+          <button class="theme-toggle" type="button" aria-label="Switch colour theme">☾</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+<div class="section">
+  <h1 class="page-title">Course Registration II</h1>
+  <p class="page-subtitle">Applied Physics (BS) &middot; Columbia Engineering &middot; 2026–2030</p>
+  <p class="reg-edit-hint" id="reg-edit-hint" hidden>
+    <span class="reg-edit-status" id="reg-edit-status"></span>
+  </p>
+</div>
+
+<!-- Semester I -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester I</span>
+    <span class="reg-sem-season">Fall 2026 (in progress)</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester I">
+      <tr data-rid="r1" data-code="CHEM UN1507" data-credits="3.00">
+        <td class="reg-code">CHEM UN1507</td>
+        <td>Intensive General Chemistry Lab</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r2" data-code="ENGL CC1010" data-credits="3.00">
+        <td class="reg-code">ENGL CC1010</td>
+        <td>University Writing</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r3" data-code="HUMA CC1001" data-credits="4.00">
+        <td class="reg-code">HUMA CC1001</td>
+        <td>Literature Humanities I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r4" data-code="MATH UN1205" data-credits="4.00">
+        <td class="reg-code">MATH UN1205</td>
+        <td>Accelerated Multivariable Calculus</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r5" data-code="PHYS UN1601" data-credits="3.50">
+        <td class="reg-code">PHYS UN1601</td>
+        <td>Physics I: Mechanics &amp; Relativity</td>
+        <td class="reg-credits">3.50</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester II -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester II</span>
+    <span class="reg-sem-season">Spring 2027</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester II">
+      <tr data-rid="r6" data-code="CHEM UN2045" data-credits="4.00">
+        <td class="reg-code">CHEM UN2045</td>
+        <td>Intensive Organic Chemistry I</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r7" data-code="ENGI E1006" data-credits="3.00">
+        <td class="reg-code">ENGI E1006</td>
+        <td>Intro to Computing for Eng &amp; App Sci</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r8" data-code="HUMA CC1002" data-credits="4.00">
+        <td class="reg-code">HUMA CC1002</td>
+        <td>Literature Humanities II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r9" data-code="MATH UN2010" data-credits="3.00">
+        <td class="reg-code">MATH UN2010</td>
+        <td>Linear Algebra</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r10" data-code="PHYS UN1602" data-credits="3.50">
+        <td class="reg-code">PHYS UN1602</td>
+        <td>Physics II: Thermo, Electricity &amp; Magnetism</td>
+        <td class="reg-credits">3.50</td>
+      </tr>
+      <tr data-rid="r11" data-code="—" data-credits="5.00">
+        <td class="reg-code">—</td>
+        <td>List B nontechnical elective</td>
+        <td class="reg-credits">5.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">22.50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester III -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester III</span>
+    <span class="reg-sem-season">Fall 2027</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester III">
+      <tr data-rid="r12" data-code="APMA E4300" data-credits="3.00">
+        <td class="reg-code">APMA E4300</td>
+        <td>Computational Mathematics: Numerical Methods</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r13" data-code="APPH E3100" data-credits="3.00">
+        <td class="reg-code">APPH E3100</td>
+        <td>Intro to Quantum Mechanics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r14" data-code="CHEM UN2046" data-credits="4.00">
+        <td class="reg-code">CHEM UN2046</td>
+        <td>Intensive Organic Chemistry II</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r15" data-code="MSAE E3111" data-credits="3.00">
+        <td class="reg-code">MSAE E3111</td>
+        <td>Thermodynamics / Kinetic Theory / Stat Mech</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r16" data-code="PHED UN1001" data-credits="1.00">
+        <td class="reg-code">PHED UN1001</td>
+        <td>Physical Education I</td>
+        <td class="reg-credits">1.00</td>
+      </tr>
+      <tr data-rid="r17" data-code="PHYS UN2601" data-credits="3.50">
+        <td class="reg-code">PHYS UN2601</td>
+        <td>Physics III: Classical &amp; Quantum Waves</td>
+        <td class="reg-credits">3.50</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester IV -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester IV</span>
+    <span class="reg-sem-season">Spring 2028</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester IV">
+      <tr data-rid="r18" data-code="CHAP E4120" data-credits="3.00">
+        <td class="reg-code">CHAP E4120</td>
+        <td>Statistical Mechanics &amp; Computational Methods</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r19" data-code="ENGI E1102" data-credits="4.00">
+        <td class="reg-code">ENGI E1102</td>
+        <td>The Art of Engineering</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r20" data-code="MATH UN2030" data-credits="3.00">
+        <td class="reg-code">MATH UN2030</td>
+        <td>Ordinary Differential Equations</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r21" data-code="PHED UN1002" data-credits="1.00">
+        <td class="reg-code">PHED UN1002</td>
+        <td>Physical Education II</td>
+        <td class="reg-credits">1.00</td>
+      </tr>
+      <tr data-rid="r22" data-code="PHYS UN1494" data-credits="3.00">
+        <td class="reg-code">PHYS UN1494</td>
+        <td>Intro to Experimental Physics Lab</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r23" data-code="STAT GU4001" data-credits="3.00">
+        <td class="reg-code">STAT GU4001</td>
+        <td>Intro to Probability and Statistics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester V -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester V</span>
+    <span class="reg-sem-season">Fall 2028</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester V">
+      <tr data-rid="r24" data-code="APPH E3200" data-credits="3.00">
+        <td class="reg-code">APPH E3200</td>
+        <td>Mechanics: Fundamentals &amp; Applications</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r25" data-code="APMA E4200" data-credits="3.00">
+        <td class="reg-code">APMA E4200</td>
+        <td>Partial Differential Equations</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r26" data-code="APPH E4901" data-credits="1.00">
+        <td class="reg-code">APPH E4901</td>
+        <td>Seminar — Problems in Applied Physics</td>
+        <td class="reg-credits">1.00</td>
+      </tr>
+      <tr data-rid="r27" data-code="CHEM GU4221" data-credits="4.50">
+        <td class="reg-code">CHEM GU4221</td>
+        <td>Quantum Chemistry I</td>
+        <td class="reg-credits">4.50</td>
+      </tr>
+      <tr data-rid="r28" data-code="MATH GU4032" data-credits="3.00">
+        <td class="reg-code">MATH GU4032</td>
+        <td>Fourier Analysis</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r29" data-code="PHYS UN3081" data-credits="2.00">
+        <td class="reg-code">PHYS UN3081</td>
+        <td>Intermediate Laboratory Work</td>
+        <td class="reg-credits">2.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">16.50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VI -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VI</span>
+    <span class="reg-sem-season">Spring 2029</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VI">
+      <tr data-rid="r30" data-code="APMA E4101" data-credits="3.00">
+        <td class="reg-code">APMA E4101</td>
+        <td>Applied Math III: Dynamical Systems — AP area 1</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r31" data-code="APMA E4150" data-credits="3.00">
+        <td class="reg-code">APMA E4150</td>
+        <td>Applied Functional Analysis</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r32" data-code="APPH E3300" data-credits="3.00">
+        <td class="reg-code">APPH E3300</td>
+        <td>Applied Electromagnetism</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r33" data-code="CHEM GU4232" data-credits="4.50">
+        <td class="reg-code">CHEM GU4232</td>
+        <td>Intro to Molecular Modeling</td>
+        <td class="reg-credits">4.50</td>
+      </tr>
+      <tr data-rid="r34" data-code="CHEM GR6222" data-credits="2.50">
+        <td class="reg-code">CHEM GR6222</td>
+        <td>Quantum Chemistry II</td>
+        <td class="reg-credits">2.50</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">16.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VII -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VII</span>
+    <span class="reg-sem-season">Fall 2029</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VII">
+      <tr data-rid="r35" data-code="APPH E4100" data-credits="3.00">
+        <td class="reg-code">APPH E4100</td>
+        <td>Quantum Physics of Matter</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r36" data-code="APMA E4400" data-credits="3.00">
+        <td class="reg-code">APMA E4400</td>
+        <td>Intro to Biophysical Modeling — AP area 2</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r37" data-code="APPH E4903" data-credits="2.00">
+        <td class="reg-code">APPH E4903</td>
+        <td>Seminar — Problems in Applied Physics</td>
+        <td class="reg-credits">2.00</td>
+      </tr>
+      <tr data-rid="r38" data-code="ECON UN1105 &amp; UN1155" data-credits="4.00">
+        <td class="reg-code">ECON UN1105 &amp; UN1155</td>
+        <td>Principles of Economics</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr data-rid="r39" data-code="HUMA UN1121 or UN1123" data-credits="3.00">
+        <td class="reg-code">HUMA UN1121 or UN1123</td>
+        <td>Art Humanities or Music Humanities</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">15.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Semester VIII -->
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Semester VIII</span>
+    <span class="reg-sem-season">Spring 2030</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Course</th>
+        <th>Credits</th>
+      </tr>
+    </thead>
+    <tbody data-semester="Semester VIII">
+      <tr data-rid="r40" data-code="APMA E4301" data-credits="3.00">
+        <td class="reg-code">APMA E4301</td>
+        <td>Numerical Methods / PDEs</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r41" data-code="APPH E4300" data-credits="3.00">
+        <td class="reg-code">APPH E4300</td>
+        <td>Applied Electrodynamics</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r42" data-code="APPH E4018" data-credits="3.00">
+        <td class="reg-code">APPH E4018</td>
+        <td>Applied Physics Laboratory</td>
+        <td class="reg-credits">3.00</td>
+      </tr>
+      <tr data-rid="r43" data-code="—" data-credits="4.00">
+        <td class="reg-code">—</td>
+        <td>List B nontechnical elective</td>
+        <td class="reg-credits">4.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Total</td><td></td>
+        <td class="reg-credits">13.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <div class="reg-sem-header">
+    <span class="reg-sem-label">Total</span>
+    <span class="reg-sem-season">8 semesters</span>
+  </div>
+  <table class="data-table reg-table">
+    <colgroup>
+      <col style="width:20%">
+      <col style="width:68%">
+      <col style="width:12%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="reg-code">Semester I</td>
+        <td>Fall 2026 (in progress)</td>
+        <td class="reg-credits">17.50</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester II</td>
+        <td>Spring 2027</td>
+        <td class="reg-credits">22.50</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester III</td>
+        <td>Fall 2027</td>
+        <td class="reg-credits">17.50</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester IV</td>
+        <td>Spring 2028</td>
+        <td class="reg-credits">17.00</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester V</td>
+        <td>Fall 2028</td>
+        <td class="reg-credits">16.50</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester VI</td>
+        <td>Spring 2029</td>
+        <td class="reg-credits">16.00</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester VII</td>
+        <td>Fall 2029</td>
+        <td class="reg-credits">15.00</td>
+      </tr>
+      <tr>
+        <td class="reg-code">Semester VIII</td>
+        <td>Spring 2030</td>
+        <td class="reg-credits">13.00</td>
+      </tr>
+      <tr class="reg-total">
+        <td>Sum</td><td></td>
+        <td class="reg-credits">135.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+// Drag-to-rearrange, active only when served by tools/serve.py. Rows are keyed by
+// a stable row id, because course codes repeat (the List B elective placeholders).
+(function () {
+  "use strict";
+
+  var hint = document.getElementById("reg-edit-hint");
+  var status = document.getElementById("reg-edit-status");
+  var dragged = null;
+  var originSemester = null;
+
+  function bodies() {
+    return Array.prototype.slice.call(
+      document.querySelectorAll("tbody[data-semester]"));
+  }
+
+  function coursesIn(tbody) {
+    return Array.prototype.slice.call(tbody.querySelectorAll("tr[data-rid]"));
+  }
+
+  function say(message, isError) {
+    hint.hidden = false;
+    status.textContent = message;
+    status.className = "reg-edit-status" + (isError ? " is-error" : "");
+  }
+
+  function rowAfter(tbody, y) {
+    var closest = null;
+    var closestOffset = Number.NEGATIVE_INFINITY;
+    coursesIn(tbody).forEach(function (row) {
+      if (row === dragged) return;
+      var box = row.getBoundingClientRect();
+      var offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closestOffset) {
+        closestOffset = offset;
+        closest = row;
+      }
+    });
+    return closest;
+  }
+
+  function retotal(tbody) {
+    var sum = 0;
+    coursesIn(tbody).forEach(function (row) {
+      sum += parseFloat(row.dataset.credits) || 0;
+    });
+    var cell = tbody.querySelector(".reg-total .reg-credits");
+    if (cell) cell.textContent = sum.toFixed(2);
+  }
+
+  function save(semesters) {
+    say("Saving…", false);
+    fetch("/api/ap-reorder", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        semesters: semesters.map(function (tbody) {
+          return {
+            semester: tbody.dataset.semester,
+            rids: coursesIn(tbody).map(function (row) {
+              return row.dataset.rid;
+            })
+          };
+        })
+      })
+    }).then(function (response) {
+      return response.json().then(function (data) {
+        if (!response.ok || !data.ok) throw new Error(data.error || "save failed");
+        window.location.reload();
+      });
+    }).catch(function (err) {
+      say("Could not save: " + err.message + " — reload to undo.", true);
+    });
+  }
+
+  function enable() {
+    bodies().forEach(function (tbody) {
+      coursesIn(tbody).forEach(function (row) {
+        row.draggable = true;
+        row.classList.add("reg-draggable");
+      });
+
+      tbody.addEventListener("dragover", function (event) {
+        if (!dragged) return;
+        event.preventDefault();
+        var before = rowAfter(tbody, event.clientY);
+        if (before) {
+          tbody.insertBefore(dragged, before);
+        } else {
+          tbody.insertBefore(dragged, tbody.querySelector(".reg-total"));
+        }
+      });
+    });
+
+    document.addEventListener("dragstart", function (event) {
+      var row = event.target.closest && event.target.closest("tr[data-rid]");
+      if (!row) return;
+      dragged = row;
+      originSemester = row.parentNode;
+      row.classList.add("is-dragging");
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("text/plain", row.dataset.rid);
+    });
+
+    document.addEventListener("dragend", function () {
+      if (!dragged) return;
+      dragged.classList.remove("is-dragging");
+      var destination = dragged.parentNode;
+      var affected = [destination];
+      if (originSemester && originSemester !== destination) {
+        affected.push(originSemester);
+      }
+      affected.forEach(retotal);
+      dragged = null;
+      originSemester = null;
+      save(affected);
+    });
+  }
+
+  fetch("/api/ping").then(function (response) {
+    if (response.ok) enable();
+  }).catch(function () {
+    /* Published or opened from disk: stays read-only. */
+  });
+})();
+</script>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      Jonas Choi &middot; Columbia University &middot; Built November 11, 2026
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector('.theme-toggle');
+      if (!btn) return;
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function current() {
+        return root.getAttribute('data-theme') || (mq.matches ? 'dark' : 'light');
+      }
+
+      function label(theme) {
+        var toDark = theme !== 'dark';
+        btn.textContent = toDark ? '\u263E' : '\u2600';
+        btn.setAttribute('aria-label', toDark ? 'Switch to night mode' : 'Switch to day mode');
+        btn.title = btn.getAttribute('aria-label');
+      }
+
+      label(current());
+
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        label(next);
+      });
+
+      // While the viewer has made no choice here, keep following the OS.
+      mq.addEventListener('change', function (e) {
+        if (!root.getAttribute('data-theme')) label(e.matches ? 'dark' : 'light');
+      });
+    })();
+  </script>
+</body>
+</html>
