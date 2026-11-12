@@ -12,13 +12,11 @@ Terms and credits verified against `doc.sis.columbia.edu`, 2026-11-10.
 | PHYS UN2601        | Physics III: Classical & Quantum Waves                                                                                                                                                                                                                         | 3.5      |
 | PHYS UN1494        | Intro to Experimental Physics Lab — confirm whether **PHYS UN3081 Intermediate Laboratory Work (2 pts) may be taken instead**, even on Sequence 2 (PHYS UN1601). Taking UN3081 in the first two years also waives the 2-pt lab inside the technical electives. | 3        |
 | CHEM UN1507        | Intensive General Chemistry Lab                                                                                                                                                                                                                                | 3        |
-| CHEM UN2045        | Intensive Organic Chemistry I                                                                                                                                                                                                                                  | 4        |
-| CHEM UN2046        | Intensive Organic Chemistry II                                                                                                                                                                                                                                 | 4        |
 | MATH UN2030        | Ordinary Differential Equations                                                                                                                                                                                                                                | 3        |
 | MATH UN2010        | Linear Algebra                                                                                                                                                                                                                                                 | 3        |
 | ENGI E1006         | Intro to Computing for Eng & App Sci                                                                                                                                                                                                                           | 3        |
 | ENGI E1102         | The Art of Engineering                                                                                                                                                                                                                                         | 4        |
-| **Subtotal**       |                                                                                                                                                                                                                                                                | **41.5** |
+| **Subtotal**       |                                                                                                                                                                                                                                                                | **33.5** |
 
 ## 2. Major core + AP areas
 
@@ -80,9 +78,9 @@ Terms and credits verified against `doc.sis.columbia.edu`, 2026-11-10.
 
 | Block | Pts |
 |---|---|
-| 1. Technical — first year / sophomore | 41.5 |
+| 1. Technical — first year / sophomore | 33.5 |
 | 2. Major core + AP areas | 33 |
 | 3. My extras — chemistry | 14.5 |
 | 4. Technical electives | 17 |
 | 5. Nontechnical + Physical Education | 29 |
-| **Sum** | **135** |
+| **Sum** | **127** |

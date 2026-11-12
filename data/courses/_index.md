@@ -1,6 +1,6 @@
 # Course Master List
 
-Last generated: 2026-11-10 — **do not edit by hand.**
+Last generated: 2026-11-12 — **do not edit by hand.**
 Run `python3 tools/sync_index.py` after changing anything in `data/courses/`.
 
 Degree: **Columbia College, Chemical Physics** (Chemistry Track 3 + Physics
