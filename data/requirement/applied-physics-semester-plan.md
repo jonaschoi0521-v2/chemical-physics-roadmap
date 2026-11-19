@@ -21,12 +21,12 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 
 | Code | Title | Pts |
 |---|---|---|
-| ENGI E1006 | Intro to Computing for Eng & App Sci | 3 |
 | HUMA CC1002 | Literature Humanities II | 4 |
-| KORN GU4512 | Fifth Year Korean II | 4 |
 | MATH UN2010 | Linear Algebra | 3 |
 | MATH UN2030 | Ordinary Differential Equations | 3 |
 | PHYS UN1602 | Physics II: Thermo, Electricity & Magnetism | 3.5 |
+| SCNC CC1000 | Frontiers of Science | 4 |
+| STAT GU4001 | Intro to Probability and Statistics | 3 |
 | | | **20.5** |
 
 ## Semester 3 — Fall 2027
@@ -60,8 +60,7 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | CHEM GU4221 | Quantum Chemistry I | 4.5 |
 | MATH GU4032 | Fourier Analysis | 3 |
 | PHYS UN3081 | Intermediate Laboratory Work | 2 |
-| STAT GU4001 | Intro to Probability and Statistics | 3 |
-| | | **16.5** |
+| | | **13.5** |
 
 ## Semester 6 — Spring 2029
 
@@ -94,7 +93,8 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | PHED UN1002 | Physical Education II | 1 |
 | — | List B nontechnical elective 1 | 3 |
 | — | List B nontechnical elective 2 | 3 |
-| | | **13** |
+| — | List B nontechnical elective 3 | 3 |
+| | | **16** |
 
 ## Total
 
@@ -104,10 +104,10 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | 2 — Spring 2027 | 20.5 |
 | 3 — Fall 2027 | 15.5 |
 | 4 — Spring 2028 | 16 |
-| 5 — Fall 2028 | 16.5 |
+| 5 — Fall 2028 | 13.5 |
 | 6 — Spring 2029 | 16 |
 | 7 — Fall 2029 | 13 |
-| 8 — Spring 2030 | 13 |
+| 8 — Spring 2030 | 16 |
 | **Sum** | **128** |
 
 ## Sequencing this plan respects
@@ -131,9 +131,9 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 - **Fall only:** APPH E3100, E3200, E4100, E4901, E4903, MSAE E3111,
   MATH GU4032, CHEM GU4221.
 - **Spring only:** APPH E3300, E4300, E4018, APMA E4101, E4150, E4301,
-  CHAP E4120, CHEM GR6222, CHEM GU4232, PHYS UN1494, KORN GU4512.
-- **Both terms:** APMA E4200, APMA E4300, STAT GU4001, ENGI E1006, ENGI E1102,
-  MATH UN2030, ECON UN1105, HUMA UN1121 / UN1123.
+  CHAP E4120, CHEM GR6222, CHEM GU4232, PHYS UN1494.
+- **Both terms:** APMA E4200, APMA E4300, STAT GU4001, ENGI E1102,
+  MATH UN2030, ECON UN1105, HUMA UN1121 / UN1123, SCNC CC1000.
 
 **Open item**
 
