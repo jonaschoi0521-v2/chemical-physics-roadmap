@@ -26,8 +26,7 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | MATH UN2030 | Ordinary Differential Equations | 3 |
 | PHYS UN1602 | Physics II: Thermo, Electricity & Magnetism | 3.5 |
 | SCNC CC1000 | Frontiers of Science | 4 |
-| STAT GU4001 | Intro to Probability and Statistics | 3 |
-| | | **20.5** |
+| | | **17.5** |
 
 ## Semester 3 — Fall 2027
 
@@ -60,7 +59,8 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | CHEM GU4221 | Quantum Chemistry I | 4.5 |
 | MATH GU4032 | Fourier Analysis | 3 |
 | PHYS UN3081 | Intermediate Laboratory Work | 2 |
-| | | **13.5** |
+| — | Technical elective 1 | 3 |
+| | | **16.5** |
 
 ## Semester 6 — Spring 2029
 
@@ -101,10 +101,10 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
 | Semester | Pts |
 |---|---|
 | 1 — Fall 2026 (in progress) | 17.5 |
-| 2 — Spring 2027 | 20.5 |
+| 2 — Spring 2027 | 17.5 |
 | 3 — Fall 2027 | 15.5 |
 | 4 — Spring 2028 | 16 |
-| 5 — Fall 2028 | 13.5 |
+| 5 — Fall 2028 | 16.5 |
 | 6 — Spring 2029 | 16 |
 | 7 — Fall 2029 | 13 |
 | 8 — Spring 2030 | 16 |
@@ -132,7 +132,7 @@ Terms and prerequisites verified against `doc.sis.columbia.edu`, 2026-11-12.
   MATH GU4032, CHEM GU4221.
 - **Spring only:** APPH E3300, E4300, E4018, APMA E4101, E4150, E4301,
   CHAP E4120, CHEM GR6222, CHEM GU4232, PHYS UN1494.
-- **Both terms:** APMA E4200, APMA E4300, STAT GU4001, ENGI E1102,
+- **Both terms:** APMA E4200, APMA E4300, ENGI E1102,
   MATH UN2030, ECON UN1105, HUMA UN1121 / UN1123, SCNC CC1000.
 
 **Open item**
